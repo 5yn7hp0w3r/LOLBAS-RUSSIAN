@@ -1,0 +1,44 @@
+[
+    {
+        "Filename": "Certutil.exe",
+        "Category": "Decode",
+        "Description": "Бинарный файл Windows для работы с сертификатами",
+        "Command Usecase": "Декодировать файлы для обхода защитных механизмов",
+        "Command": "certutil -decode {PATH:.base64} {PATH}",
+        "Command Description": "Команда для декодирования файла, закодированного в Base64.",
+        "Privileges": "User",
+        "MITRE": "T1140",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Paths": "C:\\Windows\\System32\\certutil.exe, C:\\Windows\\SysWOW64\\certutil.exe",
+        "Tags": null,
+        "Date": "2018-05-25"
+    },
+    {
+        "Filename": "Certutil.exe",
+        "Category": "Decode",
+        "Description": "Бинарный файл Windows для работы с сертификатами",
+        "Command Usecase": "Декодировать файлы для обхода защитных механизмов",
+        "Command": "certutil -decodehex {PATH:.hex} {PATH}",
+        "Command Description": "Команда для декодирования файла, закодированного в шестнадцатеричном формате.",
+        "Privileges": "User",
+        "MITRE": "T1140",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Paths": "C:\\Windows\\System32\\certutil.exe, C:\\Windows\\SysWOW64\\certutil.exe",
+        "Tags": null,
+        "Date": "2018-05-25"
+    },
+    {
+        "Filename": "Certutil.exe",
+        "Category": "Encode",
+        "Description": "Бинарный файл Windows для работы с сертификатами",
+        "Command Usecase": "Кодирование файлов для обхода защитных механизмов",
+        "Command": "certutil -encode {PATH} {PATH:.base64}",
+        "Command Description": "Команда кодирования файла в Base64.",
+        "Privileges": "User",
+        "MITRE": "T1027.013",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Paths": "C:\\Windows\\System32\\certutil.exe, C:\\Windows\\SysWOW64\\certutil.exe",
+        "Tags": null,
+        "Date": "2018-05-25"
+    }
+]

@@ -1,0 +1,19 @@
+[
+    "DESC",
+    "1)Download&Upload",
+    "2)Execute",
+    "3)Copy",
+    "4)ADS",
+    "5)AWL",
+    "6)Compile&Conceal",
+    "7)UAC_BPSS",
+    "8)Credentials",
+    "9)Encode&Decode",
+    "10)Dump",
+    "11)Recon&Tamper",
+    "ALL",
+    "BIN+PATHS",
+    "MITRE & OS",
+    "DETECTIONS",
+    "Authors"
+]

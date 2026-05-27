@@ -1,0 +1,4061 @@
+[
+    {
+        "Filename": "CertReq.exe",
+        "Command Category": "Upload",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Используется для запроса и управления сертификатами",
+        "Command Usecase": "Загрузка"
+    },
+    {
+        "Filename": "Cmd.exe",
+        "Command Category": "Upload",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1048.003",
+        "Operating System": "Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Командная строка Windows",
+        "Command Usecase": "Загрузка файла на сервер WebDAV"
+    },
+    {
+        "Filename": "ConfigSecurityPolicy.exe",
+        "Command Category": "Upload",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1567",
+        "Operating System": "Windows 10",
+        "Description": "Бинарный файл Windows Defender. Используется для управления настройками Windows Defender. Позволяет настраивать разные пилотные группы для каждого рабочего процесса совместного управления.",
+        "Command Usecase": "Загрузка файла"
+    },
+    {
+        "Filename": "DataSvcUtil.exe",
+        "Command Category": "Upload",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1567",
+        "Operating System": "Windows 10",
+        "Description": "DataSvcUtil.exe — это командная утилита WCF Data Services, которая потребляет OData-поток и генерирует клиентские классы для доступа к службе данных из приложения .NET Framework.",
+        "Command Usecase": "Загрузка файла"
+    },
+    {
+        "Filename": "TestWindowRemoteAgent.exe",
+        "Command Category": "Upload",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1048",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "TestWindowRemoteAgent.exe — командная утилита для установки RPC",
+        "Command Usecase": "Злоумышленники могут использовать это для эксфильтрации данных через DNS"
+    },
+    {
+        "Filename": "ComputerDefaults.exe",
+        "Command Category": "UAC Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1548.002",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "ComputerDefaults.exe — системная утилита Windows для управления приложениями по умолчанию (браузер, почта, мультимедиа и др.)",
+        "Command Usecase": "Выполнение бинарного файла или скрипта с высоким уровнем привилегий без запроса UAC"
+    },
+    {
+        "Filename": "Eudcedit.exe",
+        "Command Category": "UAC Bypass",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1548.002",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Приватный редактор символов Windows",
+        "Command Usecase": "Выполнение бинарного файла или скрипта с высоким уровнем привилегий без запроса UAC"
+    },
+    {
+        "Filename": "Eventvwr.exe",
+        "Command Category": "UAC Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1548.002",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10",
+        "Description": "Отображает журналы событий Windows в графическом интерфейсе",
+        "Command Usecase": "Выполнение бинарного файла или скрипта с высоким уровнем привилегий без запроса UAC"
+    },
+    {
+        "Filename": "Eventvwr.exe",
+        "Command Category": "UAC Bypass",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1548.002",
+        "Operating System": "Windows 7, Windows 8, Windows 8.1, Windows 10",
+        "Description": "Отображает журналы событий Windows в графическом интерфейсе",
+        "Command Usecase": "Выполнение команды для обхода ограничений безопасности командной строки"
+    },
+    {
+        "Filename": "iscsicpl.exe",
+        "Command Category": "UAC Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1548.002",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Панель управления Microsoft iSCSI Initiator",
+        "Command Usecase": "Выполнение пользовательской DLL через доверенный процесс с высоким уровнем привилегий без запроса UAC"
+    },
+    {
+        "Filename": "iscsicpl.exe",
+        "Command Category": "UAC Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1548.002",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Панель управления Microsoft iSCSI Initiator",
+        "Command Usecase": "Выполнение бинарного файла или скрипта с высоким уровнем привилегий без запроса UAC"
+    },
+    {
+        "Filename": "Mmc.exe",
+        "Command Category": "UAC Bypass",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1218.014",
+        "Operating System": "Windows 10 (and possibly earlier versions), Windows 11",
+        "Description": "Загружает snap-in для локального и удалённого управления системами Windows",
+        "Command Usecase": "Изменение ключа HKCU\\Environment в реестре с COR profiler значениями, затем запуск MMC для загрузки payload DLL"
+    },
+    {
+        "Filename": "Wsreset.exe",
+        "Command Category": "UAC Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1548.002",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Используется для сброса настроек Windows Store в соответствии с его манифестом",
+        "Command Usecase": "Выполнение бинарного файла или скрипта с высоким уровнем привилегий без запроса UAC"
+    },
+    {
+        "Filename": "Cipher.exe",
+        "Command Category": "Tamper",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1485",
+        "Operating System": "Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Утилита шифрования файлов",
+        "Command Usecase": "Может использоваться для судебного удаления файла"
+    },
+    {
+        "Filename": "fltMC.exe",
+        "Command Category": "Tamper",
+        "Command Privileges": "Admin",
+        "MITRE ATT&CK technique": "T1562.001",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Программа управления фильтрами (Filter Manager Control Program) в Windows",
+        "Command Usecase": "Обход защитных механизмов"
+    },
+    {
+        "Filename": "Fsutil.exe",
+        "Command Category": "Tamper",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1485",
+        "Operating System": "Windows XP, Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10",
+        "Description": "Утилита файловой системы",
+        "Command Usecase": "Может использоваться для судебного удаления файла"
+    },
+    {
+        "Filename": "Fsutil.exe",
+        "Command Category": "Tamper",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1485",
+        "Operating System": "Windows XP, Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10",
+        "Description": "Утилита файловой системы",
+        "Command Usecase": "Может использоваться для скрытия активности создания файлов"
+    },
+    {
+        "Filename": "Pktmon.exe",
+        "Command Category": "Reconnaissance",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1040",
+        "Operating System": "Windows 10 1809 and later, Windows 11",
+        "Description": "Снятие сетевых пакетов в Windows 10 с обновлением October 2018 или новее",
+        "Command Usecase": "Использование встроенного сетевого сниффера в Windows 10 для захвата конфиденциального трафика"
+    },
+    {
+        "Filename": "Pktmon.exe",
+        "Command Category": "Reconnaissance",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1040",
+        "Operating System": "Windows 10 1809 and later, Windows 11",
+        "Description": "Снятие сетевых пакетов в Windows 10 с обновлением October 2018 или новее",
+        "Command Usecase": "Поиск интересного трафика, например telnet или FTP"
+    },
+    {
+        "Filename": "Psr.exe",
+        "Command Category": "Reconnaissance",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1113",
+        "Operating System": "since Windows 7 (client) / Windows 2008 R2",
+        "Description": "Windows Problem Steps Recorder — используется для записи экрана и кликов",
+        "Command Usecase": "Может использоваться для снятия скриншотов пользовательской среды"
+    },
+    {
+        "Filename": "AccCheckConsole.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows",
+        "Description": "Проверяет требования доступности UI",
+        "Command Usecase": "Локальное выполнение управляемого кода из сборки DLL"
+    },
+    {
+        "Filename": "AddinUtil.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": ".NET утилита для обновления кэш-файлов надстроек Microsoft Office",
+        "Command Usecase": "Прокси-запуск вредоносного сериализованного payload"
+    },
+    {
+        "Filename": "adplus.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "All Windows",
+        "Description": "Отладочная утилита Windows Debugging Tools",
+        "Command Usecase": "Выполнение команд через доверенный подписанный Microsoft бинарный файл"
+    },
+    {
+        "Filename": "adplus.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "All windows",
+        "Description": "Отладочная утилита Windows Debugging Tools",
+        "Command Usecase": "Выполнение команд через доверенный подписанный Microsoft бинарный файл"
+    },
+    {
+        "Filename": "Advpack.dll",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Утилита для установки ПО и драйверов через rundll32.exe",
+        "Command Usecase": "Загрузка DLL payload"
+    },
+    {
+        "Filename": "Advpack.dll",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Утилита для установки ПО и драйверов через rundll32.exe",
+        "Command Usecase": "Запуск исполняемого payload"
+    },
+    {
+        "Filename": "Advpack.dll",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Утилита для установки ПО и драйверов через rundll32.exe",
+        "Command Usecase": "Запуск исполняемого payload"
+    },
+    {
+        "Filename": "AgentExecutor.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 10",
+        "Description": "Intune Management Extension на управляемых устройствах Intune",
+        "Command Usecase": "Выполнение неподписанных скриптов Powershell"
+    },
+    {
+        "Filename": "AgentExecutor.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 10",
+        "Description": "Intune Management Extension на управляемых устройствах Intune",
+        "Command Usecase": "Выполнение предоставленного EXE"
+    },
+    {
+        "Filename": "AppCert.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows",
+        "Description": "Командная утилита Windows App Certification Kit",
+        "Command Usecase": "Выполнение указанного файла, может использоваться для обхода защитных механизмов"
+    },
+    {
+        "Filename": "AppCert.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1218.007",
+        "Operating System": "Windows",
+        "Description": "Командная утилита Windows App Certification Kit",
+        "Command Usecase": "Выполнение пользовательского MSI файла с вредоносным кодом"
+    },
+    {
+        "Filename": "AppLauncher.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows",
+        "Description": "Утилита User Experience Virtualization для запуска приложений под мониторингом с синхронизацией настроек",
+        "Command Usecase": "Выполнение исполняемого файла через доверенный подписанный Microsoft бинарный файл"
+    },
+    {
+        "Filename": "Appvlp.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 10 w/Office 2016",
+        "Description": "Утилита Application Virtualization в составе Microsoft Office 2016",
+        "Command Usecase": "Выполнение BAT файла, размещенного на WebDAV сервере"
+    },
+    {
+        "Filename": "Appvlp.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 10 w/Office 2016",
+        "Description": "Утилита Application Virtualization в составе Microsoft Office 2016",
+        "Command Usecase": "Локальное выполнение процесса с обходом Attack Surface Reduction (ASR)"
+    },
+    {
+        "Filename": "At.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "Local Admin",
+        "MITRE ATT&CK technique": "T1053.002",
+        "Operating System": "Windows 7 or older",
+        "Description": "Планирование периодических задач",
+        "Command Usecase": "Создание повторяющейся задачи, например для поддержания обратной оболочки"
+    },
+    {
+        "Filename": "Atbroker.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Вспомогательный бинарный файл для технологий ассистивного доступа (AT)",
+        "Command Usecase": "Выполнение кода, определённого в реестре для новой Assistive Technology (AT). Требуется изменение реестра для регистрации или модификации существующей службы AT"
+    },
+    {
+        "Filename": "Bash.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows 10",
+        "Description": "Файл, используемый подсистемой Windows для Linux",
+        "Command Usecase": "Выполнение указанного файла, может использоваться для обхода защитных механизмов"
+    },
+    {
+        "Filename": "Bash.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows 10",
+        "Description": "Файл, используемый подсистемой Windows для Linux",
+        "Command Usecase": "Выполнение указанного файла, может использоваться для обхода защитных механизмов"
+    },
+    {
+        "Filename": "Bash.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows 10",
+        "Description": "Файл, используемый подсистемой Windows для Linux",
+        "Command Usecase": "Выполнение указанного файла, может использоваться для обхода защитных механизмов"
+    },
+    {
+        "Filename": "Bash.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 10, Windows Server 2019, Windows 11",
+        "Description": "Файл, используемый подсистемой Windows для Linux",
+        "Command Usecase": "Выполнение payload как дочернего процесса `bash.exe` с маскировкой под WSL"
+    },
+    {
+        "Filename": "Bginfo.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows",
+        "Description": "Утилита Background Information из пакета SysInternals",
+        "Command Usecase": "Локальное выполнение VBScript"
+    },
+    {
+        "Filename": "Bginfo.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows",
+        "Description": "Утилита Background Information из пакета SysInternals",
+        "Command Usecase": "Удалённое выполнение VBScript"
+    },
+    {
+        "Filename": "Bginfo.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows",
+        "Description": "Утилита Background Information из пакета SysInternals",
+        "Command Usecase": "Удалённое выполнение VBScript"
+    },
+    {
+        "Filename": "Bitsadmin.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10",
+        "Description": "Используется для управления интеллектуальной фоновой передачей",
+        "Command Usecase": "Выполнение указанного бинарного файла, может использоваться для обхода защитных механизмов"
+    },
+    {
+        "Filename": "Cdb.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows",
+        "Description": "Отладочная утилита Windows Debugging Tools",
+        "Command Usecase": "Локальное выполнение assembly shellcode"
+    },
+    {
+        "Filename": "Cdb.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows",
+        "Description": "Отладочная утилита Windows Debugging Tools",
+        "Command Usecase": "Выполнение shell команды через доверенный подписанный Microsoft бинарный файл"
+    },
+    {
+        "Filename": "Cdb.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows",
+        "Description": "Отладочная утилита Windows Debugging Tools",
+        "Command Usecase": "Выполнение команд через доверенный подписанный Microsoft бинарный файл"
+    },
+    {
+        "Filename": "CertOC.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows Server 2022",
+        "Description": "Используется для установки сертификатов",
+        "Command Usecase": "Выполнение кода внутри DLL файла"
+    },
+    {
+        "Filename": "Change.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Утилита Remote Desktop Services MultiUser Change Utility",
+        "Command Usecase": "Выполнение произвольного исполняемого файла через доверенный системный бинарный файл"
+    },
+    {
+        "Filename": "CL_Invocation.ps1",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1216",
+        "Operating System": "Windows 10",
+        "Description": "Скрипт диагностики Aero",
+        "Command Usecase": "Прокси-запуск"
+    },
+    {
+        "Filename": "CL_LoadAssembly.ps1",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1216",
+        "Operating System": "Windows 10 21H1 (likely other versions as well), Windows 11",
+        "Description": "PowerShell Diagnostic Script",
+        "Command Usecase": "Выполнение проксированного payload через Microsoft подписанный бинарный файл"
+    },
+    {
+        "Filename": "CL_Mutexverifiers.ps1",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1216",
+        "Operating System": "Windows 10",
+        "Description": "Прокси-запуск с CL_Mutexverifiers.ps1",
+        "Command Usecase": "Прокси-запуск"
+    },
+    {
+        "Filename": "Cmstp.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.003",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Устанавливает или удаляет профиль службы Connection Manager",
+        "Command Usecase": "Выполнение кода, скрытого в inf файле. Загрузка и запуск скриптлетов с интернета"
+    },
+    {
+        "Filename": "Conhost.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Хост консольного окна",
+        "Command Usecase": "Использование conhost.exe как прокси-бинарного файла для обхода защитных механизмов"
+    },
+    {
+        "Filename": "Conhost.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Хост консольного окна",
+        "Command Usecase": "Указание параметра --headless для скрытия окна дочернего процесса (если применимо)"
+    },
+    {
+        "Filename": "Control.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.002",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл для запуска элементов панели управления Windows",
+        "Command Usecase": "Используется для выполнения кода и обхода белого списка приложений"
+    },
+    {
+        "Filename": "coregen.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1055",
+        "Operating System": "Windows",
+        "Description": "Бинарный файл coregen.exe (Microsoft CoreCLR Native Image Generator) загружает функцию GetCLRRuntimeHost из coreclr.dll или DLL в произвольном пути. Coregen поставляется с Microsoft Silverlight.",
+        "Command Usecase": "Выполнение кода DLL"
+    },
+    {
+        "Filename": "coregen.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1055",
+        "Operating System": "Windows",
+        "Description": "Бинарный файл coregen.exe (Microsoft CoreCLR Native Image Generator) загружает функцию GetCLRRuntimeHost из coreclr.dll или DLL в произвольном пути. Coregen поставляется с Microsoft Silverlight.",
+        "Command Usecase": "Выполнение кода DLL"
+    },
+    {
+        "Filename": "csi.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows",
+        "Description": "Командный интерфейс Visual Studio",
+        "Command Usecase": "Локальное выполнение неподписанного C# кода"
+    },
+    {
+        "Filename": "CustomShellHost.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Процесс-хост для пользовательских оболочек в киоск-режиме Windows",
+        "Command Usecase": "Может использоваться для обхода защитных механизмов"
+    },
+    {
+        "Filename": "DefaultPack.EXE",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows",
+        "Description": "Этот бинарный файл скачивается вместе с другими программами Microsoft, если пользователь оставляет опцию Bing по умолчанию",
+        "Command Usecase": "Может использоваться для запуска стейджеров, бинарников и других вредоносных команд"
+    },
+    {
+        "Filename": "Desk.cpl",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Панель управления настройками рабочего стола",
+        "Command Usecase": "Запуск любого исполняемого payload с расширением .scr"
+    },
+    {
+        "Filename": "Desk.cpl",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Панель управления настройками рабочего стола",
+        "Command Usecase": "Запуск любого исполняемого payload с расширением .scr"
+    },
+    {
+        "Filename": "Devinit.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.007",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Утилита Visual Studio 2019",
+        "Command Usecase": "Выполнение кода из (удалённого) MSI файла"
+    },
+    {
+        "Filename": "Devtoolslauncher.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows 7 and up with VS/VScode installed",
+        "Description": "Бинарный файл, который выполняет указанную программу. Часть установки VS/VScode",
+        "Command Usecase": "Выполнение любого бинарного файла с заданными аргументами через developertoolssvc.exe"
+    },
+    {
+        "Filename": "Devtoolslauncher.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows 7 and up with VS/VScode installed",
+        "Description": "Бинарный файл, который выполняет указанную программу. Часть установки VS/VScode",
+        "Command Usecase": "Выполнение любого бинарного файла с заданными аргументами"
+    },
+    {
+        "Filename": "Diantz.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1036",
+        "Operating System": "Windows Server 2012, Windows Server 2012R2, Windows Server 2016, Windows Server 2019",
+        "Description": "Бинарный файл для упаковки существующих файлов в CAB (.cab)",
+        "Command Usecase": "Обход детекций на основе командной строки"
+    },
+    {
+        "Filename": "Diskshadow.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows server",
+        "Description": "Diskshadow.exe — утилита для работы с Volume Shadow Copy Service (VSS)",
+        "Command Usecase": "Использование diskshadow для обхода защитных механизмов"
+    },
+    {
+        "Filename": "Dnscmd.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "DNS admin",
+        "MITRE ATT&CK technique": "T1543.003",
+        "Operating System": "Windows server",
+        "Description": "Командный интерфейс для управления DNS-серверами",
+        "Command Usecase": "Удалённая инъекция DLL на DNS сервер"
+    },
+    {
+        "Filename": "dnx.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows",
+        "Description": "Файл среды выполнения .NET, включённый в .NET",
+        "Command Usecase": "Локальное выполнение C# проекта из папки consoleapp"
+    },
+    {
+        "Filename": "Dotnet.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 7 and up with .NET installed",
+        "Description": "dotnet.exe входит в состав .NET Framework",
+        "Command Usecase": "Выполнение DLL"
+    },
+    {
+        "Filename": "Dotnet.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1059",
+        "Operating System": "Windows 10 and up with .NET SDK installed",
+        "Description": "dotnet.exe входит в состав .NET Framework",
+        "Command Usecase": "Выполнение произвольного кода F#"
+    },
+    {
+        "Filename": "Dxcap.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows",
+        "Description": "Диагностика/отладчик DirectX, включённый в Visual Studio",
+        "Command Usecase": "Локальное выполнение процесса как дочернего процесса dxcap.exe"
+    },
+    {
+        "Filename": "Explorer.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows XP, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл для управления файлами и системными компонентами Windows",
+        "Command Usecase": "Выполнение указанного файла с родительским процессом explorer для обхода дерева процессов, может использоваться для обхода защитных механизмов"
+    },
+    {
+        "Filename": "Explorer.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Бинарный файл для управления файлами и системными компонентами Windows",
+        "Command Usecase": "Выполнение указанного файла с родительским процессом explorer для обхода дерева процессов, может использоваться для обхода защитных механизмов"
+    },
+    {
+        "Filename": "Extexport.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Загружает DLL из папки c:\\test с конкретным именем",
+        "Command Usecase": "Выполнение DLL файла"
+    },
+    {
+        "Filename": "Forfiles.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Выбирает и выполняет команду для одного или нескольких файлов (полезно для пакетной обработки)",
+        "Command Usecase": "Использование forfiles для запуска нового процесса и обхода защитных механизмов"
+    },
+    {
+        "Filename": "Fsutil.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 11",
+        "Description": "Утилита файловой системы",
+        "Command Usecase": "Запуск заранее подготовленного исполняемого файла через fsutil.exe"
+    },
+    {
+        "Filename": "Ftp.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл для подключения к FTP-серверам",
+        "Command Usecase": "Создание нового процесса через ftp.exe. ftp.exe выполняет cmd /C ВашаКоманда"
+    },
+    {
+        "Filename": "Gpscript.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется групповой политикой для обработки скриптов",
+        "Command Usecase": "Добавление локального скрипта входа через групповую политику для выполнения файла и скрытия от защитных механизмов"
+    },
+    {
+        "Filename": "Gpscript.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется групповой политикой для обработки скриптов",
+        "Command Usecase": "Добавление локального скрипта входа через групповую политику для выполнения файла и скрытия от защитных механизмов"
+    },
+    {
+        "Filename": "Hh.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.001",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл для обработки CHM-файлов в Windows",
+        "Command Usecase": "Выполнение процесса через HH.exe"
+    },
+    {
+        "Filename": "Hh.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.001",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл для обработки CHM-файлов в Windows",
+        "Command Usecase": "Выполнение команд через HH.exe"
+    },
+    {
+        "Filename": "Ie4uinit.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Выполняет команды из специально подготовленного файла ie4uinit.inf",
+        "Command Usecase": "Получение исполнения кода через копирование файлов в другое место"
+    },
+    {
+        "Filename": "Ieadvpack.dll",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "INF-установщик для Internet Explorer. Обладает функционалом advpack.dll",
+        "Command Usecase": "Загрузка DLL payload"
+    },
+    {
+        "Filename": "Ieadvpack.dll",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "INF-установщик для Internet Explorer. Обладает функционалом advpack.dll",
+        "Command Usecase": "Запуск исполняемого payload"
+    },
+    {
+        "Filename": "Ieadvpack.dll",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "INF-установщик для Internet Explorer. Обладает функционалом advpack.dll",
+        "Command Usecase": "Запуск исполняемого payload"
+    },
+    {
+        "Filename": "iediagcmd.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 10 1803, Windows 10 1703, Windows 10 22H1, Windows 10 22H2, Windows 11",
+        "Description": "Диагностическая утилита Internet Explorer",
+        "Command Usecase": "Запуск заранее подготовленного исполняемого файла через iediagcmd.exe"
+    },
+    {
+        "Filename": "Ieexec.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10",
+        "Description": "IEExec.exe — недокументированное приложение Microsoft .NET Framework. Используется как хост для запуска других управляемых приложений через URL",
+        "Command Usecase": "Скачивание и запуск кода злоумышленника с удалённого ресурса"
+    },
+    {
+        "Filename": "Ieframe.dll",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "DLL Internet-браузера для интерпретации HTML",
+        "Command Usecase": "Загрузка исполняемого payload через вызов .url файла с кавычками или без. Расширение .url можно переименовать"
+    },
+    {
+        "Filename": "Infdefaultinstall.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "Admin",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл для установки на основе содержимого INF-файлов",
+        "Command Usecase": "Выполнение кода"
+    },
+    {
+        "Filename": "Installutil.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.004",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Утилита Installer — командная утилита для установки и удаления серверных ресурсов через указанные сборки",
+        "Command Usecase": "Используется для выполнения кода и обхода белого списка приложений"
+    },
+    {
+        "Filename": "IntelliTrace.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows",
+        "Description": "Командная утилита Visual Studio для сбора и управления диагностическими трассировками",
+        "Command Usecase": "Выполнение исполняемого файла через доверенный подписанный Microsoft бинарный файл"
+    },
+    {
+        "Filename": "Launch-VsDevShell.ps1",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1216",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Импортирует модуль Developer PowerShell и вызывает Enter-VsDevShell",
+        "Command Usecase": "Прокси-запуск"
+    },
+    {
+        "Filename": "Launch-VsDevShell.ps1",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1216",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Импортирует модуль Developer PowerShell и вызывает Enter-VsDevShell",
+        "Command Usecase": "Прокси-запуск"
+    },
+    {
+        "Filename": "Makecab.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1036",
+        "Operating System": "Windows XP, Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл для упаковки файлов в CAB (.cab)",
+        "Command Usecase": "Обход детекций на основе командной строки"
+    },
+    {
+        "Filename": "Manage-bde.wsf",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1216",
+        "Operating System": "Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Скрипт управления BitLocker",
+        "Command Usecase": "Прокси-запуск из скрипта"
+    },
+    {
+        "Filename": "Manage-bde.wsf",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1216",
+        "Operating System": "Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Скрипт управления BitLocker",
+        "Command Usecase": "Прокси-запуск из скрипта"
+    },
+    {
+        "Filename": "Mavinject.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.013",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется App-v в Windows",
+        "Command Usecase": "Инъекция DLL в работающий процесс"
+    },
+    {
+        "Filename": "Mftrace.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows",
+        "Description": "Утилита генерации журналов трассировки для Media Foundation Tools",
+        "Command Usecase": "Локальное выполнение cmd.exe как дочернего процесса Mftrace.exe"
+    },
+    {
+        "Filename": "Microsoft.NodejsTools.PressAnyKey.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows",
+        "Description": "Часть инструментов NodeJS для Visual Studio",
+        "Command Usecase": "Создание нового процесса через Microsoft.NodejsTools.PressAnyKey.exe"
+    },
+    {
+        "Filename": "Microsoft.Workflow.Compiler.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows 10S, Windows 11",
+        "Description": "Утилита .NET для компиляции и выполнения кода на C# или VB.net",
+        "Command Usecase": "Компиляция и запуск кода"
+    },
+    {
+        "Filename": "Microsoft.Workflow.Compiler.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows 10S, Windows 11",
+        "Description": "Утилита .NET для компиляции и выполнения кода на C# или VB.net",
+        "Command Usecase": "Компиляция и запуск кода"
+    },
+    {
+        "Filename": "Mmc.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.014",
+        "Operating System": "Windows 10 (and possibly earlier versions), Windows 11",
+        "Description": "Загружает snap-in для локального и удалённого управления системами Windows",
+        "Command Usecase": "Настройка snap-in для загрузки COM-класса (CLSID) добавленного в реестр"
+    },
+    {
+        "Filename": "Mpiexec.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows",
+        "Description": "Командная утилита для запуска приложений Message Passing Interface (MPI)",
+        "Command Usecase": "Выполнение команд через доверенный подписанный Microsoft бинарный файл"
+    },
+    {
+        "Filename": "Msbuild.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127.001",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется для компиляции и выполнения кода",
+        "Command Usecase": "Компиляция и запуск кода"
+    },
+    {
+        "Filename": "Msbuild.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127.001",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется для компиляции и выполнения кода",
+        "Command Usecase": "Выполнение DLL"
+    },
+    {
+        "Filename": "Msbuild.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127.001",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется для компиляции и выполнения кода",
+        "Command Usecase": "Выполнение файла проекта, содержащего параметры XslTransformation"
+    },
+    {
+        "Filename": "Msbuild.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1036",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется для компиляции и выполнения кода",
+        "Command Usecase": "Обход детекций на основе командной строки"
+    },
+    {
+        "Filename": "Msconfig.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10",
+        "Description": "MSConfig — инструмент для временного отключения или включения программ, драйверов или служб Windows для диагностики проблем",
+        "Command Usecase": "Выполнение кода через Msconfig.exe"
+    },
+    {
+        "Filename": "Msdeploy.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11, Windows Server",
+        "Description": "Утилита Microsoft для развертывания веб-приложений",
+        "Command Usecase": "Локальное выполнение batch файла через msdeploy.exe"
+    },
+    {
+        "Filename": "Msdt.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Диагностическая утилита Microsoft",
+        "Command Usecase": "Выполнение кода"
+    },
+    {
+        "Filename": "Msedge.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.015",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Браузер Microsoft Edge",
+        "Command Usecase": "Запуск процесса через доверенный бинарный файл Microsoft"
+    },
+    {
+        "Filename": "msedge_proxy.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.015",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Браузер Microsoft Edge",
+        "Command Usecase": "Запуск процесса через доверенный подписанный Microsoft бинарный файл"
+    },
+    {
+        "Filename": "msedgewebview2.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "Low privileges",
+        "MITRE ATT&CK technique": "T1218.015",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "msedgewebview2.exe — исполняемый файл Microsoft Edge WebView2 для отображения веб-контента в приложениях",
+        "Command Usecase": "Прокси-запуск бинарного файла"
+    },
+    {
+        "Filename": "msedgewebview2.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.015",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "msedgewebview2.exe — исполняемый файл Microsoft Edge WebView2 для отображения веб-контента в приложениях",
+        "Command Usecase": "Прокси-запуск бинарного файла"
+    },
+    {
+        "Filename": "msedgewebview2.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.015",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "msedgewebview2.exe — исполняемый файл Microsoft Edge WebView2 для отображения веб-контента в приложениях",
+        "Command Usecase": "Прокси-запуск бинарного файла"
+    },
+    {
+        "Filename": "msedgewebview2.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.015",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "msedgewebview2.exe — исполняемый файл Microsoft Edge WebView2 для отображения веб-контента в приложениях",
+        "Command Usecase": "Прокси-запуск бинарного файла"
+    },
+    {
+        "Filename": "Mshta.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.005",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для запуска HTML-приложений (.hta)",
+        "Command Usecase": "Выполнение кода"
+    },
+    {
+        "Filename": "Mshta.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.005",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для запуска HTML-приложений (.hta)",
+        "Command Usecase": "Выполнение кода"
+    },
+    {
+        "Filename": "Mshta.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.005",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для запуска HTML-приложений (.hta)",
+        "Command Usecase": "Выполнение кода"
+    },
+    {
+        "Filename": "Mshtml.dll",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Microsoft HTML Viewer",
+        "Command Usecase": "Запуск HTA приложения"
+    },
+    {
+        "Filename": "Msiexec.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.007",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для запуска MSI-файлов",
+        "Command Usecase": "Выполнение пользовательского MSI файла с атакующим кодом"
+    },
+    {
+        "Filename": "Msiexec.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.007",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для запуска MSI-файлов",
+        "Command Usecase": "Выполнение пользовательского MSI файла с атакующим кодом с удалённого сервера"
+    },
+    {
+        "Filename": "Msiexec.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.007",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для запуска MSI-файлов",
+        "Command Usecase": "Выполнение DLL файлов"
+    },
+    {
+        "Filename": "Msiexec.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.007",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для запуска MSI-файлов",
+        "Command Usecase": "Выполнение DLL файлов"
+    },
+    {
+        "Filename": "Msiexec.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.007",
+        "Operating System": "Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для запуска MSI-файлов",
+        "Command Usecase": "Установка доверенного и подписанного MSI файла с дополнительным атакующим кодом как transformation file с удалённого сервера"
+    },
+    {
+        "Filename": "msxsl.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1220",
+        "Operating System": "Windows",
+        "Description": "Командная утилита для выполнения XSL-преобразований",
+        "Command Usecase": "Локальное выполнение скрипта из XSL файла"
+    },
+    {
+        "Filename": "msxsl.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1220",
+        "Operating System": "Windows",
+        "Description": "Командная утилита для выполнения XSL-преобразований",
+        "Command Usecase": "Локальное выполнение удалённого скрипта из XSL файла, сохранённого как XML"
+    },
+    {
+        "Filename": "Netsh.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "Admin",
+        "MITRE ATT&CK technique": "T1546.007",
+        "Operating System": "Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Netsh — утилита Windows для управления сетевыми интерфейсами",
+        "Command Usecase": "Прокси-запуск DLL"
+    },
+    {
+        "Filename": "Ntsd.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows",
+        "Description": "Символьный отладчик для Windows",
+        "Command Usecase": "Выполнение исполняемого файла через доверенный подписанный Microsoft бинарный файл"
+    },
+    {
+        "Filename": "Odbcconf.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.008",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для управления ODBC-подключениями",
+        "Command Usecase": "Выполнение DLL файла с техникой обхода защитных механизмов"
+    },
+    {
+        "Filename": "Odbcconf.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.008",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для управления ODBC-подключениями",
+        "Command Usecase": "Выполнение DLL файла с техникой обхода защитных механизмов"
+    },
+    {
+        "Filename": "Odbcconf.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1218.008",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для управления ODBC-подключениями",
+        "Command Usecase": "Выполнение DLL файла с техникой обхода защитных механизмов"
+    },
+    {
+        "Filename": "OfflineScannerShell.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Windows Defender Offline Shell",
+        "Command Usecase": "Может использоваться для обхода защитных механизмов или скрытия как механизм персистентности"
+    },
+    {
+        "Filename": "OpenConsole.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Хост консольного окна для Windows Terminal",
+        "Command Usecase": "Использование OpenConsole.exe как прокси-бинарного файла для обхода защитных механизмов"
+    },
+    {
+        "Filename": "Pcalua.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Program Compatibility Assistant",
+        "Command Usecase": "Прокси-запуск бинарного файла"
+    },
+    {
+        "Filename": "Pcalua.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10",
+        "Description": "Program Compatibility Assistant",
+        "Command Usecase": "Прокси-запуск удалённого DLL файла"
+    },
+    {
+        "Filename": "Pcalua.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Program Compatibility Assistant",
+        "Command Usecase": "Выполнение CPL файлов"
+    },
+    {
+        "Filename": "Pcwrun.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Program Compatibility Wizard",
+        "Command Usecase": "Прокси-запуск бинарного файла"
+    },
+    {
+        "Filename": "Pcwrun.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Program Compatibility Wizard",
+        "Command Usecase": "Прокси-запуск бинарного файла"
+    },
+    {
+        "Filename": "Pcwutl.dll",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Microsoft HTML Viewer",
+        "Command Usecase": "Запуск исполняемого файла"
+    },
+    {
+        "Filename": "Pester.bat",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1216",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Используется в Powershell pester",
+        "Command Usecase": "Прокси-запуск"
+    },
+    {
+        "Filename": "Pester.bat",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1216",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Используется в Powershell pester",
+        "Command Usecase": "Прокси-запуск"
+    },
+    {
+        "Filename": "Pixtool.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows",
+        "Description": "Командная утилита для захвата и анализа PIX GPU",
+        "Command Usecase": "Выполнение исполняемого файла через доверенный подписанный Microsoft бинарный файл"
+    },
+    {
+        "Filename": "Pnputil.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1547",
+        "Operating System": "Windows 7, Windows 10, Windows 11",
+        "Description": "Используется для установки драйверов",
+        "Command Usecase": "Установка вредоносного драйвера"
+    },
+    {
+        "Filename": "Presentationhost.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10",
+        "Description": "Файл используется для запуска браузерных приложений",
+        "Command Usecase": "Выполнение кода внутри XBAP файлов"
+    },
+    {
+        "Filename": "Procdump.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows 8.1 and higher, Windows Server 2012 and higher",
+        "Description": "Утилита SysInternals для дампа памяти",
+        "Command Usecase": "Выполнение неподписанной DLL"
+    },
+    {
+        "Filename": "Procdump.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows 8.1 and higher, Windows Server 2012 and higher",
+        "Description": "Утилита SysInternals для дампа памяти",
+        "Command Usecase": "Выполнение неподписанной DLL"
+    },
+    {
+        "Filename": "Provlaunch.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 10, Windows 11, Windows Server 2012, Windows Server 2016, Windows Server 2019, Windows Server 2022",
+        "Description": "Процесс-ланчер",
+        "Command Usecase": "Выполнение произвольной команды"
+    },
+    {
+        "Filename": "Pubprn.vbs",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1216.001",
+        "Operating System": "Windows 10",
+        "Description": "Прокси-запуск с Pubprn.vbs",
+        "Command Usecase": "Прокси-запуск"
+    },
+    {
+        "Filename": "Query.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Remote Desktop Services MultiUser Query Utility",
+        "Command Usecase": "Выполнение произвольного исполняемого файла через доверенный системный бинарный файл"
+    },
+    {
+        "Filename": "Rasautou.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User, Administrator in Windows 8",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1",
+        "Description": "Windows Remote Access Dialer",
+        "Command Usecase": "Выполнение кода DLL"
+    },
+    {
+        "Filename": "rcsi.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows",
+        "Description": "Неинтерактивный командный интерфейс, включённый в Visual Studio",
+        "Command Usecase": "Локальное выполнение произвольного C# кода из локального CSX файла"
+    },
+    {
+        "Filename": "Regasm.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.009",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Часть .NET",
+        "Command Usecase": "Выполнение кода с обходом белого списка приложений"
+    },
+    {
+        "Filename": "Register-cimprovider.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется для регистрации новых WMI-провайдеров",
+        "Command Usecase": "Выполнение кода внутри DLL файла"
+    },
+    {
+        "Filename": "Regsvcs.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.009",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Regsvcs и Regasm — командные утилиты Windows для регистрации .NET COM-сборок",
+        "Command Usecase": "Выполнение DLL файла с обходом белого списка приложений"
+    },
+    {
+        "Filename": "Regsvr32.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.010",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для регистрации DLL",
+        "Command Usecase": "Выполнение кода с удалённого скриптлета, обход белого списка приложений"
+    },
+    {
+        "Filename": "Regsvr32.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.010",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для регистрации DLL",
+        "Command Usecase": "Выполнение кода через скриптлет, обход белого списка приложений"
+    },
+    {
+        "Filename": "Regsvr32.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.010",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для регистрации DLL",
+        "Command Usecase": "Выполнение DLL файла"
+    },
+    {
+        "Filename": "Regsvr32.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.010",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для регистрации DLL",
+        "Command Usecase": "Выполнение DLL файла"
+    },
+    {
+        "Filename": "Remote.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows",
+        "Description": "Отладочная утилита Windows Debugging Tools",
+        "Command Usecase": "Выполнение процесса через доверенный подписанный Microsoft бинарный файл"
+    },
+    {
+        "Filename": "Remote.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows",
+        "Description": "Отладочная утилита Windows Debugging Tools",
+        "Command Usecase": "Выполнение удалённого бинарного файла без сохранения на диск"
+    },
+    {
+        "Filename": "Reset.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Remote Desktop Services Reset Utility",
+        "Command Usecase": "Выполнение произвольного исполняемого файла через доверенный системный бинарный файл"
+    },
+    {
+        "Filename": "Rundll32.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для запуска DLL-файлов",
+        "Command Usecase": "Выполнение DLL файла"
+    },
+    {
+        "Filename": "Rundll32.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для запуска DLL-файлов",
+        "Command Usecase": "Выполнение DLL с SMB-шары"
+    },
+    {
+        "Filename": "Rundll32.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для запуска DLL-файлов",
+        "Command Usecase": "Выполнение кода из интернета"
+    },
+    {
+        "Filename": "Rundll32.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10 (and likely previous versions), Windows 11",
+        "Description": "Используется Windows для запуска DLL-файлов",
+        "Command Usecase": "Выполнение DLL/EXE COM серверного payload или ScriptletURL кода"
+    },
+    {
+        "Filename": "Runexehelper.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 10, Windows 11, Windows Server 2012, Windows Server 2016, Windows Server 2019, Windows Server 2022",
+        "Description": "Процесс-ланчер",
+        "Command Usecase": "Выполнение произвольного кода"
+    },
+    {
+        "Filename": "Runonce.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Выполняет задачу Run Once, настроенную в реестре",
+        "Command Usecase": "Персистентность, обход защитных механизмов"
+    },
+    {
+        "Filename": "Runscripthelper.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10",
+        "Description": "Выполнить целевой PowerShell-скрипт",
+        "Command Usecase": "Обход ограниченного режима языка и выполнение скрипта Powershell"
+    },
+    {
+        "Filename": "Schtasks.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1053.005",
+        "Operating System": "Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Планирование периодических задач",
+        "Command Usecase": "Создание повторяющейся задачи для поддержания обратной оболочки"
+    },
+    {
+        "Filename": "Schtasks.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1053.005",
+        "Operating System": "Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Планирование периодических задач",
+        "Command Usecase": "Создание удалённой задачи для ежедневного выполнения относительно времени создания"
+    },
+    {
+        "Filename": "Scriptrunner.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Запуск бинарного файла через прокси для обхода защитных мер",
+        "Command Usecase": "Выполнение бинарного файла через прокси-бинарный файл для обхода защитных механизмов"
+    },
+    {
+        "Filename": "Scriptrunner.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Запуск бинарного файла через прокси для обхода защитных мер",
+        "Command Usecase": "Выполнение бинарного файла через прокси-бинарный файл с внешнего сервера для обхода защитных механизмов"
+    },
+    {
+        "Filename": "Setres.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows Server 2012, Windows Server 2016, Windows Server 2019, Windows Server 2022",
+        "Description": "Настройка параметров дисплея",
+        "Command Usecase": "Выполнение произвольного кода"
+    },
+    {
+        "Filename": "SettingSyncHost.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 8, Windows 8.1, Windows 10",
+        "Description": "Хост-процесс для синхронизации настроек",
+        "Command Usecase": "Может использоваться для обхода защитных механизмов или скрытия как механизм персистентности"
+    },
+    {
+        "Filename": "SettingSyncHost.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 8, Windows 8.1, Windows 10",
+        "Description": "Хост-процесс для синхронизации настроек",
+        "Command Usecase": "Может использоваться для обхода защитных механизмов или скрытия как механизм персистентности, а также фактически работать как опция -WindowStyle Hidden для любого произвольного batch файла"
+    },
+    {
+        "Filename": "Setupapi.dll",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows",
+        "Description": "Windows Setup API",
+        "Command Usecase": "Загрузка исполняемого payload"
+    },
+    {
+        "Filename": "Sftp.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "sftp.exe — командная утилита Windows для безопасной передачи файлов через SFTP",
+        "Command Usecase": "Прокси-запуск указанной команды, может использоваться для обхода защитных механизмов"
+    },
+    {
+        "Filename": "Shdocvw.dll",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Shell Doc Object and Control Library",
+        "Command Usecase": "Загрузка исполняемого payload через вызов .url файла с кавычками или без. Расширение .url можно переименовать"
+    },
+    {
+        "Filename": "Shell32.dll",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Windows Shell Common Dll",
+        "Command Usecase": "Загрузка DLL payload"
+    },
+    {
+        "Filename": "Shell32.dll",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Windows Shell Common Dll",
+        "Command Usecase": "Запуск исполняемого payload"
+    },
+    {
+        "Filename": "Shell32.dll",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Windows Shell Common Dll",
+        "Command Usecase": "Запуск исполняемого payload"
+    },
+    {
+        "Filename": "Shell32.dll",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Windows Shell Common Dll",
+        "Command Usecase": "Загрузка DLL/CPL payload"
+    },
+    {
+        "Filename": "Sqlps.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows",
+        "Description": "Утилита Microsoft SQL Server для загрузки командлетов SQL Server. SQL Server 100/110 — PowerShell v2, SQL Server 120/130 — PowerShell v4. Заменена на SQLToolsPS.exe в SQL Server 2016+, но остаётся для совместимости",
+        "Command Usecase": "Выполнение команд PowerShell без логирования ScriptBlock"
+    },
+    {
+        "Filename": "SQLToolsPS.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows",
+        "Description": "Утилита Microsoft SQL для загрузки командлетов SQL Server. Замена sqlps.exe, используется с SQL Server 2016+",
+        "Command Usecase": "Выполнение команды PowerShell"
+    },
+    {
+        "Filename": "Squirrel.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 7 and up with Microsoft Teams installed",
+        "Description": "Бинарный файл для обновления установленного пакета Nuget/squirrel. Часть установки Microsoft Teams",
+        "Command Usecase": "Скачивание и выполнение бинарного файла"
+    },
+    {
+        "Filename": "Squirrel.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 7 and up with Microsoft Teams installed",
+        "Description": "Бинарный файл для обновления установленного пакета Nuget/squirrel. Часть установки Microsoft Teams",
+        "Command Usecase": "Скачивание и выполнение бинарного файла"
+    },
+    {
+        "Filename": "ssh.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows 10 1809, Windows Server 2019",
+        "Description": "ssh.exe — клиент OpenSSH для подключения к устройствам Windows 10 (build 1809+) и Windows Server 2019",
+        "Command Usecase": "Выполнение указанной команды, может использоваться для обхода защитных механизмов"
+    },
+    {
+        "Filename": "ssh.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows 10",
+        "Description": "ssh.exe — клиент OpenSSH для подключения к устройствам Windows 10 (build 1809+) и Windows Server 2019",
+        "Command Usecase": "Выполнение указанного файла, может использоваться для обхода защитных механизмов"
+    },
+    {
+        "Filename": "Stordiag.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 10",
+        "Description": "Утилита диагностики хранения данных",
+        "Command Usecase": "Возможные цели обхода защитных механизмов"
+    },
+    {
+        "Filename": "Stordiag.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 11",
+        "Description": "Утилита диагностики хранения данных",
+        "Command Usecase": "Возможные цели обхода защитных механизмов"
+    },
+    {
+        "Filename": "SyncAppvPublishingServer.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 10 1709, Windows 10 1703, Windows 10 1607",
+        "Description": "Используется App-v для получения списка серверов App-v",
+        "Command Usecase": "Использование SyncAppvPublishingServer как хоста Powershell для выполнения кода Powershell, обход защитных механизмов"
+    },
+    {
+        "Filename": "Syncappvpublishingserver.vbs",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1216.002",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Скрипт для работы с App-v и сервером публикации",
+        "Command Usecase": "Использование хоста Powershell, вызываемого из vbs скрипта"
+    },
+    {
+        "Filename": "Syssetup.dll",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Windows NT System Setup",
+        "Command Usecase": "Загрузка исполняемого payload"
+    },
+    {
+        "Filename": "te.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows",
+        "Description": "Тестовая утилита Microsoft Test Authoring and Execution Framework (TAEF)",
+        "Command Usecase": "Выполнение скрипта Visual Basic из локального Windows Script Component файла"
+    },
+    {
+        "Filename": "te.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows",
+        "Description": "Тестовая утилита Microsoft Test Authoring and Execution Framework (TAEF)",
+        "Command Usecase": "Выполнение DLL файла"
+    },
+    {
+        "Filename": "Teams.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.015",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Бинарный файл среды выполнения Electron для запуска Teams",
+        "Command Usecase": "Выполнение JavaScript кода"
+    },
+    {
+        "Filename": "Teams.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.015",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Бинарный файл среды выполнения Electron для запуска Teams",
+        "Command Usecase": "Выполнение JavaScript кода"
+    },
+    {
+        "Filename": "Teams.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.015",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Бинарный файл среды выполнения Electron для запуска Teams",
+        "Command Usecase": "Выполнение процесса через доверенный подписанный Microsoft бинарный файл"
+    },
+    {
+        "Filename": "Tracker.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows",
+        "Description": "Утилита Microsoft .NET Framework",
+        "Command Usecase": "Инъекция локально сохранённого DLL в целевой процесс"
+    },
+    {
+        "Filename": "Ttdinject.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows 10 2004 and above, Windows 11",
+        "Description": "Используется Windows 1809+ для отладки Time Travel (вызов tttracer.exe)",
+        "Command Usecase": "Запуск процесса через другой бинарный файл"
+    },
+    {
+        "Filename": "Ttdinject.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows 10 1909 and below",
+        "Description": "Используется Windows 1809+ для отладки Time Travel (вызов tttracer.exe)",
+        "Command Usecase": "Запуск процесса через другой бинарный файл"
+    },
+    {
+        "Filename": "Tttracer.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows 10 1809 and newer, Windows 11",
+        "Description": "Используется Windows 1809+ для отладки Time Travel",
+        "Command Usecase": "Запуск процесса через другой бинарный файл"
+    },
+    {
+        "Filename": "Unregmp2.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows 10",
+        "Description": "Утилита установки Microsoft Windows Media Player",
+        "Command Usecase": "Прокси-запуск бинарного файла"
+    },
+    {
+        "Filename": "Update.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 7 and up with Microsoft Teams installed",
+        "Description": "Бинарный файл для обновления установленного пакета Nuget/squirrel. Часть установки Microsoft Teams",
+        "Command Usecase": "Скачивание и выполнение бинарного файла"
+    },
+    {
+        "Filename": "Update.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 7 and up with Microsoft Teams installed",
+        "Description": "Бинарный файл для обновления установленного пакета Nuget/squirrel. Часть установки Microsoft Teams",
+        "Command Usecase": "Скачивание и выполнение бинарного файла"
+    },
+    {
+        "Filename": "Update.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 7 and up with Microsoft Teams installed",
+        "Description": "Бинарный файл для обновления установленного пакета Nuget/squirrel. Часть установки Microsoft Teams",
+        "Command Usecase": "Скачивание и выполнение бинарного файла"
+    },
+    {
+        "Filename": "Update.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 7 and up with Microsoft Teams installed",
+        "Description": "Бинарный файл для обновления установленного пакета Nuget/squirrel. Часть установки Microsoft Teams",
+        "Command Usecase": "Скачивание и выполнение бинарного файла"
+    },
+    {
+        "Filename": "Update.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 7 and up with Microsoft Teams installed",
+        "Description": "Бинарный файл для обновления установленного пакета Nuget/squirrel. Часть установки Microsoft Teams",
+        "Command Usecase": "Выполнение бинарного файла"
+    },
+    {
+        "Filename": "Update.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1547",
+        "Operating System": "Windows 7 and up with Microsoft Teams installed",
+        "Description": "Бинарный файл для обновления установленного пакета Nuget/squirrel. Часть установки Microsoft Teams",
+        "Command Usecase": "Выполнение бинарного файла"
+    },
+    {
+        "Filename": "Update.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1070",
+        "Operating System": "Windows 7 and up with Microsoft Teams installed",
+        "Description": "Бинарный файл для обновления установленного пакета Nuget/squirrel. Часть установки Microsoft Teams",
+        "Command Usecase": "Выполнение бинарного файла"
+    },
+    {
+        "Filename": "Url.dll",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "DLL расширения Internet Shortcut Shell",
+        "Command Usecase": "Вызов HTML приложения через mshta.exe (обработчик по умолчанию)"
+    },
+    {
+        "Filename": "Url.dll",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "DLL расширения Internet Shortcut Shell",
+        "Command Usecase": "Загрузка исполняемого payload через вызов .url файла"
+    },
+    {
+        "Filename": "Url.dll",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "DLL расширения Internet Shortcut Shell",
+        "Command Usecase": "Загрузка исполняемого payload через указание file protocol handler (обфусцировано)"
+    },
+    {
+        "Filename": "Url.dll",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "DLL расширения Internet Shortcut Shell",
+        "Command Usecase": "Запуск исполняемого файла"
+    },
+    {
+        "Filename": "Url.dll",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "DLL расширения Internet Shortcut Shell",
+        "Command Usecase": "Загрузка исполняемого payload через указание file protocol handler (обфусцировано)"
+    },
+    {
+        "Filename": "Url.dll",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "DLL расширения Internet Shortcut Shell",
+        "Command Usecase": "Вызов HTML приложения через mshta.exe (обработчик по умолчанию)"
+    },
+    {
+        "Filename": "UtilityFunctions.ps1",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1216",
+        "Operating System": "Windows 10 21H1 (likely other versions as well), Windows 11",
+        "Description": "PowerShell Diagnostic Script",
+        "Command Usecase": "Выполнение проксированного payload через Microsoft подписанный бинарный файл"
+    },
+    {
+        "Filename": "Verclsid.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.012",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Используется для проверки COM-объекта перед его инстанцированием в Windows Explorer",
+        "Command Usecase": "Запуск COM объекта, созданного в реестре, для обхода защитных механизмов"
+    },
+    {
+        "Filename": "VSDiagnostics.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Командная утилита для выполнения диагностики",
+        "Command Usecase": "Прокси-запуск бинарного файла"
+    },
+    {
+        "Filename": "VSDiagnostics.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Командная утилита для выполнения диагностики",
+        "Command Usecase": "Прокси-запуск бинарного файла с аргументами"
+    },
+    {
+        "Filename": "Vshadow.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "VShadow — командная утилита для создания и управления теневыми копиями томов",
+        "Command Usecase": "Выполнение указанного исполняемого файла"
+    },
+    {
+        "Filename": "VSIISExeLauncher.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 10 and up with VS/VScode installed",
+        "Description": "Бинарный файл, который выполняет указанную программу. Часть установки VS/VScode",
+        "Command Usecase": "Выполнение любого бинарного файла с заданными аргументами"
+    },
+    {
+        "Filename": "vsjitdebugger.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows",
+        "Description": "Just-In-Time (JIT) отладчик, включённый в Visual Studio",
+        "Command Usecase": "Выполнение локального PE файла как дочернего процесса Vsjitdebugger.exe"
+    },
+    {
+        "Filename": "VSLaunchBrowser.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows",
+        "Description": "Утилита Microsoft Visual Studio для запуска браузера при отладке веб-приложений",
+        "Command Usecase": "Открытие локального файла через стандартное приложение для данного расширения с VSLaunchBrowser как родительским процессом"
+    },
+    {
+        "Filename": "VSLaunchBrowser.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows",
+        "Description": "Утилита Microsoft Visual Studio для запуска браузера при отладке веб-приложений",
+        "Command Usecase": "Открытие удалённого файла через стандартное приложение для данного расширения с VSLaunchBrowser как родительским процессом"
+    },
+    {
+        "Filename": "vsls-agent.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 10 21H2 (likely previous and newer versions with modern versions of Visual Studio installed)",
+        "Description": "Агент Visual Studio Live Share (совместная работа с кодом)",
+        "Command Usecase": "Выполнение проксированного payload через Microsoft подписанный бинарный файл"
+    },
+    {
+        "Filename": "Wab.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Менеджер адресной книги Windows",
+        "Command Usecase": "Выполнение DLL файла с обходом защитных механизмов"
+    },
+    {
+        "Filename": "wbemtest.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "Any",
+        "MITRE ATT&CK technique": "T1047",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Тестовый бинарник WMI/WBEM",
+        "Command Usecase": "Выполнение произвольных команд через WMI классы"
+    },
+    {
+        "Filename": "WFMFormat.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Командная утилита для форматирования дампа, созданного Message Farm Analyzer",
+        "Command Usecase": "Прокси-запуск бинарного файла"
+    },
+    {
+        "Filename": "WinDbg.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows",
+        "Description": "Отладчик Windows для режима пользователя и ядра",
+        "Command Usecase": "Выполнение исполняемого файла через доверенный подписанный Microsoft бинарный файл"
+    },
+    {
+        "Filename": "winfile.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Исполняемый файл Windows File Manager",
+        "Command Usecase": "Выполнение указанного файла, может использоваться для обхода защитных механизмов"
+    },
+    {
+        "Filename": "winget.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "Local Administrator - required to enable local manifest setting",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Утилита Windows Package Manager",
+        "Command Usecase": "Скачивание и выполнение произвольного файла из интернета"
+    },
+    {
+        "Filename": "winrm.vbs",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1216",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Скрипт для управления настройками Windows RM",
+        "Command Usecase": "Прокси-запуск"
+    },
+    {
+        "Filename": "winrm.vbs",
+        "Command Category": "Execute",
+        "Command Privileges": "Admin",
+        "MITRE ATT&CK technique": "T1216",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Скрипт для управления настройками Windows RM",
+        "Command Usecase": "Прокси-запуск"
+    },
+    {
+        "Filename": "Wlrmdr.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Исполняемый файл напоминания о входе в систему Windows",
+        "Command Usecase": "Использование wlrmdr как прокси-бинарного файла для обхода защитных механизмов"
+    },
+    {
+        "Filename": "Wmic.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Командная утилита WMI (WMIC) для работы с WMI",
+        "Command Usecase": "Выполнение бинарного файла через wmic для обхода защитных механизмов"
+    },
+    {
+        "Filename": "Wmic.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Командная утилита WMI (WMIC) для работы с WMI",
+        "Command Usecase": "Выполнение бинарного файла на удалённой системе"
+    },
+    {
+        "Filename": "Wmic.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Командная утилита WMI (WMIC) для работы с WMI",
+        "Command Usecase": "Выполнение бинарного файла на удалённой системе"
+    },
+    {
+        "Filename": "Wmic.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Командная утилита WMI (WMIC) для работы с WMI",
+        "Command Usecase": "Выполнение скрипта на удалённой системе"
+    },
+    {
+        "Filename": "WorkFolders.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Work Folders",
+        "Command Usecase": "Может использоваться для обхода защитных механизмов или скрытия как механизм персистентности"
+    },
+    {
+        "Filename": "Wsl.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows 10, Windows Server 2019, Windows 11",
+        "Description": "Исполняемый файл подсистемы Windows для Linux",
+        "Command Usecase": "Выполнение указанного файла, может использоваться для выполнения произвольных команд Linux"
+    },
+    {
+        "Filename": "Wsl.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows 10, Windows Server 2019, Windows 11",
+        "Description": "Исполняемый файл подсистемы Windows для Linux",
+        "Command Usecase": "Выполнение произвольных команд Linux с правами root без пароля"
+    },
+    {
+        "Filename": "Wsl.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows 10, Windows Server 2019, Windows 11",
+        "Description": "Исполняемый файл подсистемы Windows для Linux",
+        "Command Usecase": "Выполнение произвольных команд Linux"
+    },
+    {
+        "Filename": "Wsl.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 10, Windows Server 2019, Windows 11",
+        "Description": "Исполняемый файл подсистемы Windows для Linux",
+        "Command Usecase": "Выполнение payload как дочернего процесса `bash.exe` с маскировкой под WSL"
+    },
+    {
+        "Filename": "wt.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows 11",
+        "Description": "Windows Terminal",
+        "Command Usecase": "Использование wt.exe как прокси-бинарного файла для обхода защитных механизмов"
+    },
+    {
+        "Filename": "wuauclt.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 10",
+        "Description": "Клиент обновления Windows",
+        "Command Usecase": "Выполнение DLL через методы attach/detach"
+    },
+    {
+        "Filename": "XBootMgr.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows",
+        "Description": "Бинарный файл Windows Performance Toolkit для запуска трассировки производительности",
+        "Command Usecase": "Выполнение кода в рамках post-trace automation flow"
+    },
+    {
+        "Filename": "XBootMgr.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows",
+        "Description": "Бинарный файл Windows Performance Toolkit для запуска трассировки производительности",
+        "Command Usecase": "Выполнение кода в рамках pre-trace automation или staging"
+    },
+    {
+        "Filename": "XBootMgrSleep.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows",
+        "Description": "Бинарный файл Windows Performance Toolkit для анализа производительности системы во время сна и пробуждения",
+        "Command Usecase": "Выполнение указанного исполняемого файла, может использоваться для обхода защитных механизмов"
+    },
+    {
+        "Filename": "Xwizard.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Выполнить пользовательский класс, добавленный в реестр, или скачать файл через Xwizard.exe",
+        "Command Usecase": "Запуск COM объекта, созданного в реестре, для обхода защитных механизмов"
+    },
+    {
+        "Filename": "Xwizard.exe",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Выполнить пользовательский класс, добавленный в реестр, или скачать файл через Xwizard.exe",
+        "Command Usecase": "Запуск COM объекта, созданного в реестре, для обхода защитных механизмов"
+    },
+    {
+        "Filename": "Zipfldr.dll",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Библиотека сжатых папок",
+        "Command Usecase": "Запуск исполняемого файла"
+    },
+    {
+        "Filename": "Zipfldr.dll",
+        "Command Category": "Execute",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Библиотека сжатых папок",
+        "Command Usecase": "Запуск исполняемого файла"
+    },
+    {
+        "Filename": "Certutil.exe",
+        "Command Category": "Encode",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1027.013",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл Windows для работы с сертификатами",
+        "Command Usecase": "Кодирование файлов для обхода защитных механизмов"
+    },
+    {
+        "Filename": "adplus.exe",
+        "Command Category": "Dump",
+        "Command Privileges": "SYSTEM",
+        "MITRE ATT&CK technique": "T1003.001",
+        "Operating System": "All Windows",
+        "Description": "Отладочная утилита Windows Debugging Tools",
+        "Command Usecase": "Создание дампа памяти и последующий оффлайн разбор"
+    },
+    {
+        "Filename": "adplus.exe",
+        "Command Category": "Dump",
+        "Command Privileges": "SYSTEM",
+        "MITRE ATT&CK technique": "T1003.001",
+        "Operating System": "All Windows",
+        "Description": "Отладочная утилита Windows Debugging Tools",
+        "Command Usecase": "Выполнение команд через доверенный подписанный Microsoft бинарный файл"
+    },
+    {
+        "Filename": "Comsvcs.dll",
+        "Command Category": "Dump",
+        "Command Privileges": "SYSTEM",
+        "MITRE ATT&CK technique": "T1003.001",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Службы COM+",
+        "Command Usecase": "Дамп памяти Lsass.exe для извлечения учётных данных"
+    },
+    {
+        "Filename": "Createdump.exe",
+        "Command Category": "Dump",
+        "Command Privileges": "SYSTEM",
+        "MITRE ATT&CK technique": "T1003",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Microsoft .NET Runtime Crash Dump Generator (входит в .NET Core)",
+        "Command Usecase": "Дамп содержимого памяти процесса по PID"
+    },
+    {
+        "Filename": "Diskshadow.exe",
+        "Command Category": "Dump",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1003.003",
+        "Operating System": "Windows server",
+        "Description": "Diskshadow.exe — утилита для работы с Volume Shadow Copy Service (VSS)",
+        "Command Usecase": "Использование diskshadow для эксфильтрации данных из VSS, таких как NTDS.dit"
+    },
+    {
+        "Filename": "dsdbutil.exe",
+        "Command Category": "Dump",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1003.003",
+        "Operating System": "Windows Server 2012, Windows Server 2016, Windows Server 2019",
+        "Description": "Dsdbutil — командная утилита Windows Server, встроенная в систему, используется для экспорта Active Directory (требуется роль AD LDS)",
+        "Command Usecase": "Создание снимка базы данных Active Directory NTDS.dit"
+    },
+    {
+        "Filename": "dsdbutil.exe",
+        "Command Category": "Dump",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1003.003",
+        "Operating System": "Windows Server 2012, Windows Server 2016, Windows Server 2019",
+        "Description": "Dsdbutil — командная утилита Windows Server, встроенная в систему, используется для экспорта Active Directory (требуется роль AD LDS)",
+        "Command Usecase": "Монтирование снимка для доступа к ntds.dit с использованием `copy c:\\<Snap Volume>\\windows\\ntds\\ntds.dit c:\\users\\administrator\\desktop\\ntds.dit.bak`"
+    },
+    {
+        "Filename": "dsdbutil.exe",
+        "Command Category": "Dump",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1003.003",
+        "Operating System": "Windows Server 2012, Windows Server 2016, Windows Server 2019",
+        "Description": "Dsdbutil — командная утилита Windows Server, встроенная в систему, используется для экспорта Active Directory (требуется роль AD LDS)",
+        "Command Usecase": "Удаление снимка"
+    },
+    {
+        "Filename": "dsdbutil.exe",
+        "Command Category": "Dump",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1003.003",
+        "Operating System": "Windows Server 2012, Windows Server 2016, Windows Server 2019",
+        "Description": "Dsdbutil — командная утилита Windows Server, встроенная в систему, используется для экспорта Active Directory (требуется роль AD LDS)",
+        "Command Usecase": "Монтирование идентификатора снимка 1 и доступ к нему через `copy c:\\<Snap Volume>\\windows\\ntds\\ntds.dit c:\\users\\administrator\\desktop\\ntds.dit.bak`"
+    },
+    {
+        "Filename": "dsdbutil.exe",
+        "Command Category": "Dump",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1003.003",
+        "Operating System": "Windows Server 2012, Windows Server 2016, Windows Server 2019",
+        "Description": "Dsdbutil — командная утилита Windows Server, встроенная в систему, используется для экспорта Active Directory (требуется роль AD LDS)",
+        "Command Usecase": "Удаление снимка"
+    },
+    {
+        "Filename": "Dump64.exe",
+        "Command Category": "Dump",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1003.001",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Утилита дампа памяти Microsoft Visual Studio",
+        "Command Usecase": "Создание дампа памяти и оффлайн разбор для извлечения учётных данных"
+    },
+    {
+        "Filename": "DumpMinitool.exe",
+        "Command Category": "Dump",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1003.001",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Утилита дампа Visual Studio 2022",
+        "Command Usecase": "Создание дампа памяти и оффлайн разбор"
+    },
+    {
+        "Filename": "ntdsutil.exe",
+        "Command Category": "Dump",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1003.003",
+        "Operating System": "Windows",
+        "Description": "Командная утилита для экспорта Active Directory",
+        "Command Usecase": "Дамп базы данных Active Directory NTDS.dit"
+    },
+    {
+        "Filename": "rdrleakdiag.exe",
+        "Command Category": "Dump",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1003",
+        "Operating System": "Windows",
+        "Description": "Утилита Microsoft Windows для диагностики утечек ресурсов",
+        "Command Usecase": "Создание дампа процесса по PID"
+    },
+    {
+        "Filename": "rdrleakdiag.exe",
+        "Command Category": "Dump",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1003.001",
+        "Operating System": "Windows",
+        "Description": "Утилита Microsoft Windows для диагностики утечек ресурсов",
+        "Command Usecase": "Дамп процесса LSASS"
+    },
+    {
+        "Filename": "rdrleakdiag.exe",
+        "Command Category": "Dump",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1003.001",
+        "Operating System": "Windows",
+        "Description": "Утилита Microsoft Windows для диагностики утечек ресурсов",
+        "Command Usecase": "Множественный дамп процесса LSASS"
+    },
+    {
+        "Filename": "Sqldumper.exe",
+        "Command Category": "Dump",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1003",
+        "Operating System": "Windows",
+        "Description": "Отладочная утилита Microsoft SQL",
+        "Command Usecase": "Дамп процесса по PID"
+    },
+    {
+        "Filename": "Sqldumper.exe",
+        "Command Category": "Dump",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1003.001",
+        "Operating System": "Windows",
+        "Description": "Отладочная утилита Microsoft SQL",
+        "Command Usecase": "Дамп LSASS.exe в Mimikatz-совместимый формат по PID"
+    },
+    {
+        "Filename": "Tttracer.exe",
+        "Command Category": "Dump",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1003",
+        "Operating System": "Windows 10 1809 and newer, Windows 11",
+        "Description": "Используется Windows 1809+ для отладки Time Travel",
+        "Command Usecase": "Создание дампа процесса по PID"
+    },
+    {
+        "Filename": "wbadmin.exe",
+        "Command Category": "Dump",
+        "Command Privileges": "Administrator, Backup Operators, SeBackupPrivilege",
+        "MITRE ATT&CK technique": "T1003.003",
+        "Operating System": "Windows Server",
+        "Description": "Административная утилита Windows Backup",
+        "Command Usecase": "Создание снимка базы данных Active Directory NTDS.dit"
+    },
+    {
+        "Filename": "wbadmin.exe",
+        "Command Category": "Dump",
+        "Command Privileges": "Administrator, Backup Operators, SeBackupPrivilege",
+        "MITRE ATT&CK technique": "T1003.003",
+        "Operating System": "Windows Server",
+        "Description": "Административная утилита Windows Backup",
+        "Command Usecase": "Дамп базы данных Active Directory NTDS.dit"
+    },
+    {
+        "Filename": "AppInstaller.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Утилита для установки приложений AppX/MSIX на Windows 10",
+        "Command Usecase": "Скачать файл из Интернета"
+    },
+    {
+        "Filename": "Bcp.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows",
+        "Description": "Утилита Microsoft SQL Server Bulk Copy Program для импорта/экспорта данных между SQL Server и файлами данных",
+        "Command Usecase": "Извлечь вредоносный исполняемый файл из хранилища базы данных на локальную файловую систему для выполнения"
+    },
+    {
+        "Filename": "Bitsadmin.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется для управления интеллектуальной фоновой передачей",
+        "Command Usecase": "Скачать файл из Интернета"
+    },
+    {
+        "Filename": "CertOC.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows Server 2022",
+        "Description": "Используется для установки сертификатов",
+        "Command Usecase": "Скачать скрипты, вебшеллы и т.д."
+    },
+    {
+        "Filename": "CertReq.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Используется для запроса и управления сертификатами",
+        "Command Usecase": "Скачать файл из Интернета"
+    },
+    {
+        "Filename": "Certutil.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл Windows для работы с сертификатами",
+        "Command Usecase": "Скачать файл из Интернета"
+    },
+    {
+        "Filename": "Certutil.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл Windows для работы с сертификатами",
+        "Command Usecase": "Скачать файл из Интернета"
+    },
+    {
+        "Filename": "Certutil.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Бинарный файл Windows для работы с сертификатами",
+        "Command Usecase": "Скачать файл из Интернета"
+    },
+    {
+        "Filename": "Cmd.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Командная строка Windows",
+        "Command Usecase": "Скачать/скопировать файл с WebDAV сервера"
+    },
+    {
+        "Filename": "cmdl32.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Автозагрузка Microsoft Connection Manager",
+        "Command Usecase": "Скачать файл из Интернета"
+    },
+    {
+        "Filename": "ConfigSecurityPolicy.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Бинарный файл Windows Defender. Используется для управления настройками Windows Defender",
+        "Command Usecase": "Скачать payload с удалённого сервера"
+    },
+    {
+        "Filename": "Desktopimgdownldr.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Бинарный файл Windows для настройки блокировки экрана и фонового изображения рабочего стола",
+        "Command Usecase": "Скачать произвольные файлы с веб-сервера"
+    },
+    {
+        "Filename": "devtunnel.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 10, Windows 11, MacOS",
+        "Description": "Бинарный файл для включения форвардинга портов в Windows",
+        "Command Usecase": "Скачать файлы, загрузка файлов, эксфильтрация данных"
+    },
+    {
+        "Filename": "Diantz.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows Server 2012, Windows Server 2012R2, Windows Server 2016, Windows Server 2019",
+        "Description": "Бинарный файл для упаковки существующих файлов в CAB (.cab)",
+        "Command Usecase": "Скачать и сжать в cab файл"
+    },
+    {
+        "Filename": "ECMangen.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows",
+        "Description": "Командная утилита для управления сертификатами в Microsoft Exchange Server",
+        "Command Usecase": "Скачает удалённый payload и поместит его в INetCache"
+    },
+    {
+        "Filename": "Esentutl.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл для работы с базой данных Microsoft JET",
+        "Command Usecase": "Используется для копирования файлов с одного UNC пути на другой"
+    },
+    {
+        "Filename": "Excel.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows",
+        "Description": "Бинарный файл Microsoft Office",
+        "Command Usecase": "Скачает удалённый payload и поместит его в INetCache"
+    },
+    {
+        "Filename": "Expand.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл для распаковки одного или нескольких архивов",
+        "Command Usecase": "Копирует исходный файл в файл назначения"
+    },
+    {
+        "Filename": "Extrac32.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows XP, Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Извлечение в ADS, копирование или перезапись файла с Extrac32.exe",
+        "Command Usecase": "Скачать файл с UNC/WEBDav"
+    },
+    {
+        "Filename": "Findstr.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Запись в ADS, поиск или скачивание файлов с Findstr.exe",
+        "Command Usecase": "Скачать/копировать файл с WebDAV сервера"
+    },
+    {
+        "Filename": "Finger.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 8.1, Windows 10, Windows 11, Windows Server 2008, Windows Server 2008R2, Windows Server 2012, Windows Server 2012R2, Windows Server 2016, Windows Server 2019, Windows Server 2022",
+        "Description": "Отображает информацию о пользователе(-ях) на удалённом компьютере с Finger-сервисом",
+        "Command Usecase": "Скачать вредоносный payload"
+    },
+    {
+        "Filename": "Ftp.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows XP, Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл для подключения к FTP-серверам",
+        "Command Usecase": "Создать новый процесс через ftp.exe. ftp.exe скачивает бинарник"
+    },
+    {
+        "Filename": "Hh.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл для обработки CHM-файлов в Windows",
+        "Command Usecase": "Скачать файлы с URL"
+    },
+    {
+        "Filename": "Ieexec.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10",
+        "Description": "IEExec.exe — недокументированное приложение .NET Framework, используется как хост для запуска управляемых приложений через URL",
+        "Command Usecase": "Скачать и запустить код злоумышленника с удалённого сервера"
+    },
+    {
+        "Filename": "IMEWDBLD.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Модуль открытого словаря Microsoft IME",
+        "Command Usecase": "Скачать файл из Интернета"
+    },
+    {
+        "Filename": "Installutil.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Installer — командная утилита для установки и удаления серверных ресурсов через указанные сборки",
+        "Command Usecase": "Скачать payload с удалённого сервера"
+    },
+    {
+        "Filename": "Ldifde.exe",
+        "Command Category": "Download",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows Server with AD Domain Services role,  Windows 10 with AD LDS role.",
+        "Description": "Создаёт, изменяет и удаляет объекты LDAP",
+        "Command Usecase": "Скачать файл из Интернета"
+    },
+    {
+        "Filename": "Makecab.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows XP, Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл для упаковки файлов в CAB (.cab)",
+        "Command Usecase": "Скачать файл и сжать в cab файл"
+    },
+    {
+        "Filename": "Mmc.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.014",
+        "Operating System": "Windows 10 (and possibly earlier versions), Windows 11",
+        "Description": "Загружает snap-in для локального и удалённого управления Windows",
+        "Command Usecase": "Скачать файл из Интернета"
+    },
+    {
+        "Filename": "MpCmdRun.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 10",
+        "Description": "Бинарный файл Windows Defender. Используется для управления настройками Windows Defender",
+        "Command Usecase": "Скачать файл"
+    },
+    {
+        "Filename": "MpCmdRun.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 10",
+        "Description": "Бинарный файл Windows Defender. Используется для управления настройками Windows Defender",
+        "Command Usecase": "Скачать файл"
+    },
+    {
+        "Filename": "MSAccess.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows",
+        "Description": "Компонент Microsoft Office",
+        "Command Usecase": "Скачает удалённый payload (если расширение файла .mdb) и поместит в INetCache"
+    },
+    {
+        "Filename": "Msedge.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Браузер Microsoft Edge",
+        "Command Usecase": "Скачать файл из Интернета"
+    },
+    {
+        "Filename": "Msedge.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Браузер Microsoft Edge",
+        "Command Usecase": "Скачать файл из Интернета"
+    },
+    {
+        "Filename": "msedge_proxy.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Браузер Microsoft Edge",
+        "Command Usecase": "Скачать файл из Интернета"
+    },
+    {
+        "Filename": "Mshta.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для запуска HTML-приложений (.hta)",
+        "Command Usecase": "Скачать payload с удалённого сервера"
+    },
+    {
+        "Filename": "MsoHtmEd.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Компонент Microsoft Office",
+        "Command Usecase": "Скачает удалённый payload и поместит его в INetCache"
+    },
+    {
+        "Filename": "Mspub.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Microsoft Publisher",
+        "Command Usecase": "Скачает удалённый payload и поместит его в INetCache"
+    },
+    {
+        "Filename": "msxsl.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows",
+        "Description": "Командная утилита для выполнения XSL-преобразований",
+        "Command Usecase": "Скачать файл из Интернета и сохранить на диск"
+    },
+    {
+        "Filename": "Ngen.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Microsoft Native Image Generator",
+        "Command Usecase": "Скачает удалённый payload и поместит его в INetCache"
+    },
+    {
+        "Filename": "OneDriveStandaloneUpdater.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 10",
+        "Description": "Обновление OneDrive Standalone",
+        "Command Usecase": "Скачать файл из Интернета без запуска подозрительных исполняемых файлов с аномальными аргументами"
+    },
+    {
+        "Filename": "PhotoViewer.dll",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Windows Photo Viewer",
+        "Command Usecase": "Скачать файл с удалённого сервера"
+    },
+    {
+        "Filename": "Powerpnt.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows",
+        "Description": "Бинарный файл Microsoft Office",
+        "Command Usecase": "Скачает удалённый payload и поместит его в INetCache"
+    },
+    {
+        "Filename": "Presentationhost.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Файл используется для запуска браузерных приложений",
+        "Command Usecase": "Скачать payload с удалённого сервера"
+    },
+    {
+        "Filename": "PrintBrm.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Командная утилита миграции принтеров",
+        "Command Usecase": "Эксфильтровать содержимое удалённой папки на UNC share в zip файл"
+    },
+    {
+        "Filename": "ProtocolHandler.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Бинарный файл Microsoft Office",
+        "Command Usecase": "Откроет указанный URL в браузере по умолчанию, что приведет к скачиванию файла в папку Downloads пользователя (без взаимодействия)"
+    },
+    {
+        "Filename": "Replace.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется для замены файла другим файлом",
+        "Command Usecase": "Скачать файл"
+    },
+    {
+        "Filename": "Scrobj.dll",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Windows Script Component Runtime",
+        "Command Usecase": "Скачать файл с удалённого сервера"
+    },
+    {
+        "Filename": "Shimgvw.dll",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Photo Gallery Viewer",
+        "Command Usecase": "Скачать файл с удалённого сервера"
+    },
+    {
+        "Filename": "Squirrel.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 7 and up with Microsoft Teams installed",
+        "Description": "Бинарный файл для обновления установленного пакета Nuget/squirrel. Часть установки Microsoft Teams",
+        "Command Usecase": "Скачать бинарный файл"
+    },
+    {
+        "Filename": "Update.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 7 and up with Microsoft Teams installed",
+        "Description": "Бинарный файл для обновления установленного пакета Nuget/squirrel. Часть установки Microsoft Teams",
+        "Command Usecase": "Скачать бинарный файл"
+    },
+    {
+        "Filename": "Visio.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows",
+        "Description": "Исполняемый файл Microsoft Visio",
+        "Command Usecase": "Скачает удалённый payload и поместит его в INetCache"
+    },
+    {
+        "Filename": "VSLaunchBrowser.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows",
+        "Description": "Утилита Microsoft Visual Studio для запуска браузера при отладке веб-приложений",
+        "Command Usecase": "Скачает удалённый файл в INetCache и откроет его с помощью приложения по умолчанию с VSLaunchBrowser как родительским процессом"
+    },
+    {
+        "Filename": "winget.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Утилита Windows Package Manager",
+        "Command Usecase": "Скачать и установить ПО из Microsoft Store, даже если Microsoft Store заблокирован"
+    },
+    {
+        "Filename": "WinProj.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows",
+        "Description": "Исполняемый файл Microsoft Project",
+        "Command Usecase": "Скачает удалённый payload и поместит его в INetCache"
+    },
+    {
+        "Filename": "Winword.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows",
+        "Description": "Бинарный файл Microsoft Office",
+        "Command Usecase": "Скачает удалённый payload и поместит его в INetCache"
+    },
+    {
+        "Filename": "Wsl.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 10, Windows Server 2019, Windows 11",
+        "Description": "Исполняемый файл подсистемы Windows для Linux",
+        "Command Usecase": "Скачать файл"
+    },
+    {
+        "Filename": "xsd.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows",
+        "Description": "Инструмент определения схемы XML (XSD) в составе Windows SDK",
+        "Command Usecase": "Скачает удалённый payload и поместит его в INetCache"
+    },
+    {
+        "Filename": "Xwizard.exe",
+        "Command Category": "Download",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Выполнить пользовательский класс, добавленный в реестр, или скачать файл через Xwizard.exe",
+        "Command Usecase": "Скачать файл из Интернета"
+    },
+    {
+        "Filename": "Certutil.exe",
+        "Command Category": "Decode",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1140",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл Windows для работы с сертификатами",
+        "Command Usecase": "Декодировать файлы для обхода защитных механизмов"
+    },
+    {
+        "Filename": "Certutil.exe",
+        "Command Category": "Decode",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1140",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл Windows для работы с сертификатами",
+        "Command Usecase": "Декодировать файлы для обхода защитных механизмов"
+    },
+    {
+        "Filename": "Cmdkey.exe",
+        "Command Category": "Credentials",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1078",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Создаёт, отображает и удаляет сохранённые имена пользователей, пароли или учётные данные",
+        "Command Usecase": "Получить учетные данные с хоста"
+    },
+    {
+        "Filename": "Findstr.exe",
+        "Command Category": "Credentials",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1552.001",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Запись в ADS, поиск или скачивание файлов с Findstr.exe",
+        "Command Usecase": "Найти учетные данные в атрибуте cpassword"
+    },
+    {
+        "Filename": "Reg.exe",
+        "Command Category": "Credentials",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1003.002",
+        "Operating System": "Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется для работы с реестром",
+        "Command Usecase": "Дамп учетных данных из Security Account Manager (SAM)"
+    },
+    {
+        "Filename": "Rpcping.exe",
+        "Command Category": "Credentials",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1003",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется для проверки RPC-соединения",
+        "Command Usecase": "Перехват учетных данных на нестандартном порту"
+    },
+    {
+        "Filename": "Rpcping.exe",
+        "Command Category": "Credentials",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1187",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется для проверки RPC-соединения",
+        "Command Usecase": "Ретрансляция NTLM аутентификации через RPC (ncacn_ip_tcp) на кастомном порту"
+    },
+    {
+        "Filename": "Bitsadmin.exe",
+        "Command Category": "Copy",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10",
+        "Description": "Используется для управления интеллектуальной фоновой передачей",
+        "Command Usecase": "Копировать файл"
+    },
+    {
+        "Filename": "Colorcpl.exe",
+        "Command Category": "Copy",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1036.005",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл для управления цветом",
+        "Command Usecase": "Копирует файл(ы) в подпапку доверенной папки (c:\\Windows\\System32), что может использоваться для скрытия или маскировки файлов"
+    },
+    {
+        "Filename": "dtutil.exe",
+        "Command Category": "Copy",
+        "Command Privileges": "Administrator",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows",
+        "Description": "Утилита Microsoft для управления пакетами SQL Server Integration Services",
+        "Command Usecase": "Копирует исходный файл в файл назначения"
+    },
+    {
+        "Filename": "Esentutl.exe",
+        "Command Category": "Copy",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл для работы с базой данных Microsoft JET",
+        "Command Usecase": "Копирует файлы с A в B"
+    },
+    {
+        "Filename": "Esentutl.exe",
+        "Command Category": "Copy",
+        "Command Privileges": "Admin",
+        "MITRE ATT&CK technique": "T1003.003",
+        "Operating System": "Windows 10, Windows 11, Windows 2016 Server, Windows 2019 Server",
+        "Description": "Бинарный файл для работы с базой данных Microsoft JET",
+        "Command Usecase": "Копировать/извлечь заблокированный файл, например AD Database"
+    },
+    {
+        "Filename": "Expand.exe",
+        "Command Category": "Copy",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл для распаковки одного или нескольких архивов",
+        "Command Usecase": "Копирует файлы с A в B"
+    },
+    {
+        "Filename": "Extrac32.exe",
+        "Command Category": "Copy",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows XP, Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Извлечение в ADS, копирование или перезапись файла с Extrac32.exe",
+        "Command Usecase": "Копировать файл"
+    },
+    {
+        "Filename": "Msdeploy.exe",
+        "Command Category": "Copy",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11, Windows Server",
+        "Description": "Утилита Microsoft для развертывания веб-приложений",
+        "Command Usecase": "Копировать файл"
+    },
+    {
+        "Filename": "Print.exe",
+        "Command Category": "Copy",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для отправки файлов на принтер",
+        "Command Usecase": "Копировать файлы"
+    },
+    {
+        "Filename": "Print.exe",
+        "Command Category": "Copy",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для отправки файлов на принтер",
+        "Command Usecase": "Копировать/скачать файл с удалённого сервера"
+    },
+    {
+        "Filename": "Replace.exe",
+        "Command Category": "Copy",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется для замены файла другим файлом",
+        "Command Usecase": "Копировать файлы"
+    },
+    {
+        "Filename": "Tar.exe",
+        "Command Category": "Copy",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Используется Windows для создания и извлечения архивов",
+        "Command Usecase": "Копировать файлы"
+    },
+    {
+        "Filename": "Wmic.exe",
+        "Command Category": "Copy",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Командная утилита WMI (WMIC) для работы с WMI",
+        "Command Usecase": "Копировать файл"
+    },
+    {
+        "Filename": "DeviceCredentialDeployment.exe",
+        "Command Category": "Conceal",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564",
+        "Operating System": "Windows 10",
+        "Description": "Установка учётных данных устройства",
+        "Command Usecase": "Может использоваться для скрытого запуска консольного приложения (например, cmd.exe) в фоне"
+    },
+    {
+        "Filename": "Csc.exe",
+        "Command Category": "Compile",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл .NET Framework для компиляции C# кода",
+        "Command Usecase": "Компиляция кода злоумышленника на системе. Обход защитных механизмов"
+    },
+    {
+        "Filename": "Csc.exe",
+        "Command Category": "Compile",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл .NET Framework для компиляции C# кода",
+        "Command Usecase": "Компиляция кода злоумышленника на системе. Обход защитных механизмов"
+    },
+    {
+        "Filename": "Ilasm.exe",
+        "Command Category": "Compile",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows 7, Windows 10, Windows 11",
+        "Description": "Используется для компиляции C# кода в DLL или EXE",
+        "Command Usecase": "Компиляция кода злоумышленника на системе. Обход защитных механизмов"
+    },
+    {
+        "Filename": "Ilasm.exe",
+        "Command Category": "Compile",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows 7, Windows 10, Windows 11",
+        "Description": "Используется для компиляции C# кода в DLL или EXE",
+        "Command Usecase": "Описание сценария использования"
+    },
+    {
+        "Filename": "Jsc.exe",
+        "Command Category": "Compile",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл .NET для компиляции JavaScript в EXE или DLL",
+        "Command Usecase": "Компиляция кода злоумышленника на системе. Обход защитных механизмов"
+    },
+    {
+        "Filename": "Jsc.exe",
+        "Command Category": "Compile",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл .NET для компиляции JavaScript в EXE или DLL",
+        "Command Usecase": "Компиляция кода злоумышленника на системе. Обход защитных механизмов"
+    },
+    {
+        "Filename": "vbc.exe",
+        "Command Category": "Compile",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows 7, Windows 10, Windows 11",
+        "Description": "Бинарный файл для компиляции VBS кода",
+        "Command Usecase": "Компиляция кода злоумышленника на системе. Обход защитных механизмов"
+    },
+    {
+        "Filename": "vbc.exe",
+        "Command Category": "Compile",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows 7, Windows 10, Windows 11",
+        "Description": "Бинарный файл для компиляции VBS кода",
+        "Command Usecase": "Компиляция кода злоумышленника на системе. Обход защитных механизмов"
+    },
+    {
+        "Filename": "AccCheckConsole.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows",
+        "Description": "Проверяет требования доступности UI",
+        "Command Usecase": "Локальное выполнение управляемого кода для обхода AppLocker"
+    },
+    {
+        "Filename": "Advpack.dll",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Утилита для установки ПО и драйверов через rundll32.exe",
+        "Command Usecase": "Выполнение локального или удалённого скрипта через спецификацию INF файла"
+    },
+    {
+        "Filename": "Advpack.dll",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Утилита для установки ПО и драйверов через rundll32.exe",
+        "Command Usecase": "Выполнение локального или удалённого скрипта через спецификацию INF файла"
+    },
+    {
+        "Filename": "Aspnet_Compiler.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Инструмент компиляции ASP.NET",
+        "Command Usecase": "Выполнение проксированного payload через подписанный Microsoft бинарник для обхода решений контроля приложений"
+    },
+    {
+        "Filename": "Bash.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows 10",
+        "Description": "Файл, используемый подсистемой Windows для Linux",
+        "Command Usecase": "Выполнение указанного файла, может использоваться для обхода белых списков приложений"
+    },
+    {
+        "Filename": "Bginfo.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows",
+        "Description": "Утилита Background Information из пакета SysInternals",
+        "Command Usecase": "Локальное выполнение VBScript"
+    },
+    {
+        "Filename": "Bginfo.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows",
+        "Description": "Утилита Background Information из пакета SysInternals",
+        "Command Usecase": "Удалённое выполнение VBScript"
+    },
+    {
+        "Filename": "Bginfo.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows",
+        "Description": "Утилита Background Information из пакета SysInternals",
+        "Command Usecase": "Удалённое выполнение VBScript"
+    },
+    {
+        "Filename": "Cmstp.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.003",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10",
+        "Description": "Устанавливает или удаляет профиль службы Connection Manager",
+        "Command Usecase": "Выполнение кода, скрытого в inf файле. Выполнение кода напрямую из Интернета"
+    },
+    {
+        "Filename": "coregen.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows",
+        "Description": "Бинарный файл coregen.exe (Microsoft CoreCLR Native Image Generator) загружает функцию GetCLRRuntimeHost из coreclr.dll или DLL в произвольном пути. Поставляется с Microsoft Silverlight",
+        "Command Usecase": "Выполнение кода DLL"
+    },
+    {
+        "Filename": "Dfshim.dll",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127.002",
+        "Operating System": "Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "ClickOnce-движок в Windows для .NET",
+        "Command Usecase": "Использовать бинарник для обхода белого списка приложений"
+    },
+    {
+        "Filename": "Dfsvc.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127.002",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "ClickOnce-движок в Windows для .NET",
+        "Command Usecase": "Использовать бинарник для обхода белых списков приложений"
+    },
+    {
+        "Filename": "Dotnet.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 7 and up with .NET installed",
+        "Description": "dotnet.exe входит в состав .NET Framework",
+        "Command Usecase": "Выполнение кода с обходом AWL"
+    },
+    {
+        "Filename": "Dotnet.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 10 and up with .NET Core installed",
+        "Description": "dotnet.exe входит в состав .NET Framework",
+        "Command Usecase": "Выполнение кода с обходом AWL"
+    },
+    {
+        "Filename": "Fsi.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1059",
+        "Operating System": "Windows 10 2004 (likely previous and newer versions as well)",
+        "Description": "64-битный интерпретатор FSharp (F#), включённый в Visual Studio и DotNet Core SDK",
+        "Command Usecase": "Выполнение payload через подписанный Microsoft бинарник для обхода WDAC политик"
+    },
+    {
+        "Filename": "Fsi.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1059",
+        "Operating System": "Windows 10 2004 (likely previous and newer versions as well)",
+        "Description": "64-битный интерпретатор FSharp (F#), включённый в Visual Studio и DotNet Core SDK",
+        "Command Usecase": "Выполнение payload через подписанный Microsoft бинарник для обхода WDAC политик"
+    },
+    {
+        "Filename": "FsiAnyCpu.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1059",
+        "Operating System": "Windows 10 2004 (likely previous and newer versions as well)",
+        "Description": "32/64-битный интерпретатор FSharp (F#), включённый в Visual Studio",
+        "Command Usecase": "Выполнение payload через подписанный Microsoft бинарник для обхода WDAC политик"
+    },
+    {
+        "Filename": "FsiAnyCpu.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1059",
+        "Operating System": "Windows 10 2004 (likely previous and newer versions as well)",
+        "Description": "32/64-битный интерпретатор FSharp (F#), включённый в Visual Studio",
+        "Command Usecase": "Выполнение payload через подписанный Microsoft бинарник для обхода WDAC политик"
+    },
+    {
+        "Filename": "Ieadvpack.dll",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "INF-установщик для Internet Explorer. Обладает функционалом advpack.dll",
+        "Command Usecase": "Выполнение локального или удалённого скрипта через спецификацию INF файла"
+    },
+    {
+        "Filename": "Ieadvpack.dll",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "INF-установщик для Internet Explorer. Обладает функционалом advpack.dll",
+        "Command Usecase": "Выполнение локального или удалённого скрипта через спецификацию INF файла"
+    },
+    {
+        "Filename": "Installutil.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.004",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Installer — командная утилита для установки и удаления серверных ресурсов через указанные сборки",
+        "Command Usecase": "Использовать для выполнения кода и обхода белого списка приложений"
+    },
+    {
+        "Filename": "Microsoft.Workflow.Compiler.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows 10S, Windows 11",
+        "Description": "Утилита .NET для компиляции и выполнения кода на C# или VB.net",
+        "Command Usecase": "Компиляция и выполнение кода"
+    },
+    {
+        "Filename": "Msbuild.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127.001",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется для компиляции и выполнения кода",
+        "Command Usecase": "Компиляция и выполнение кода"
+    },
+    {
+        "Filename": "Msdeploy.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11, Windows Server",
+        "Description": "Утилита Microsoft для развертывания веб-приложений",
+        "Command Usecase": "Локальное выполнение batch файла через msdeploy.exe"
+    },
+    {
+        "Filename": "Msdt.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Диагностическая утилита Microsoft",
+        "Command Usecase": "Выполнение кода с обходом белого списка приложений"
+    },
+    {
+        "Filename": "Msdt.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1202",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Диагностическая утилита Microsoft",
+        "Command Usecase": "Выполнение кода с обходом белого списка приложений"
+    },
+    {
+        "Filename": "msxsl.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1220",
+        "Operating System": "Windows",
+        "Description": "Командная утилита для выполнения XSL-преобразований",
+        "Command Usecase": "Локальное выполнение скрипта из XSL файла"
+    },
+    {
+        "Filename": "msxsl.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1220",
+        "Operating System": "Windows",
+        "Description": "Командная утилита для выполнения XSL-преобразований",
+        "Command Usecase": "Локальное выполнение удалённого скрипта из XSL файла, сохранённого как XML"
+    },
+    {
+        "Filename": "rcsi.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows",
+        "Description": "Неинтерактивный командный интерфейс, включённый в Visual Studio",
+        "Command Usecase": "Локальное выполнение произвольного C# кода из локального CSX файла"
+    },
+    {
+        "Filename": "Regasm.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "Local Admin",
+        "MITRE ATT&CK technique": "T1218.009",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Часть .NET",
+        "Command Usecase": "Выполнение кода с обходом белого списка приложений"
+    },
+    {
+        "Filename": "Regsvcs.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "Local Admin",
+        "MITRE ATT&CK technique": "T1218.009",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Regsvcs и Regasm — командные утилиты Windows для регистрации .NET COM-сборок",
+        "Command Usecase": "Выполнение DLL с обходом белого списка приложений"
+    },
+    {
+        "Filename": "Regsvr32.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.010",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для регистрации DLL",
+        "Command Usecase": "Выполнение кода из удалённого скрипта, обход белого списка приложений"
+    },
+    {
+        "Filename": "Regsvr32.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.010",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для регистрации DLL",
+        "Command Usecase": "Выполнение кода из скрипта, обход белого списка приложений"
+    },
+    {
+        "Filename": "Remote.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows",
+        "Description": "Отладочная утилита Windows Debugging Tools",
+        "Command Usecase": "Выполнение процесса через доверенный подписанный Microsoft бинарный файл"
+    },
+    {
+        "Filename": "Setupapi.dll",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Windows Setup API",
+        "Command Usecase": "Выполнение локального или удалённого скрипта через спецификацию INF файла"
+    },
+    {
+        "Filename": "Squirrel.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 7 and up with Microsoft Teams installed",
+        "Description": "Бинарный файл для обновления установленного пакета Nuget/squirrel. Часть установки Microsoft Teams",
+        "Command Usecase": "Скачать и выполнить бинарный файл"
+    },
+    {
+        "Filename": "Squirrel.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 7 and up with Microsoft Teams installed",
+        "Description": "Бинарный файл для обновления установленного пакета Nuget/squirrel. Часть установки Microsoft Teams",
+        "Command Usecase": "Скачать и выполнить бинарный файл"
+    },
+    {
+        "Filename": "Syssetup.dll",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.011",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Windows NT System Setup",
+        "Command Usecase": "Выполнение локального или удалённого скрипта через спецификацию INF файла (может появиться окно ошибки)"
+    },
+    {
+        "Filename": "Tracker.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows",
+        "Description": "Утилита Microsoft .NET Framework",
+        "Command Usecase": "Инъекция локально сохранённого DLL в целевой процесс"
+    },
+    {
+        "Filename": "Update.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 7 and up with Microsoft Teams installed",
+        "Description": "Бинарный файл для обновления установленного пакета Nuget/squirrel. Часть установки Microsoft Teams",
+        "Command Usecase": "Скачать и выполнить бинарный файл"
+    },
+    {
+        "Filename": "Update.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 7 and up with Microsoft Teams installed",
+        "Description": "Бинарный файл для обновления установленного пакета Nuget/squirrel. Часть установки Microsoft Teams",
+        "Command Usecase": "Скачать и выполнить бинарный файл"
+    },
+    {
+        "Filename": "Update.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 7 and up with Microsoft Teams installed",
+        "Description": "Бинарный файл для обновления установленного пакета Nuget/squirrel. Часть установки Microsoft Teams",
+        "Command Usecase": "Скачать и выполнить бинарный файл"
+    },
+    {
+        "Filename": "Update.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 7 and up with Microsoft Teams installed",
+        "Description": "Бинарный файл для обновления установленного пакета Nuget/squirrel. Часть установки Microsoft Teams",
+        "Command Usecase": "Обход белого списка приложений"
+    },
+    {
+        "Filename": "Update.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 7 and up with Microsoft Teams installed",
+        "Description": "Бинарный файл для обновления установленного пакета Nuget/squirrel. Часть установки Microsoft Teams",
+        "Command Usecase": "Скачать и выполнить бинарный файл"
+    },
+    {
+        "Filename": "VisualUiaVerifyNative.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218",
+        "Operating System": "Windows 10 2004 (likely previous and newer versions as well)",
+        "Description": "Бинарный файл Windows SDK для ручного и автоматизированного тестирования реализации Microsoft UI Automation и контролов",
+        "Command Usecase": "Выполнение проксированного payload через подписанный Microsoft бинарник для обхода WDAC политик"
+    },
+    {
+        "Filename": "vstest.console.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "VSTest.Console.exe — командная утилита для запуска тестов",
+        "Command Usecase": "Прокси-запуск и обход белого списка приложений, злоумышленники могут запускать вредоносный код, встроенный в тестовые методы созданного DLL/EXE"
+    },
+    {
+        "Filename": "Wfc.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1127",
+        "Operating System": "Windows 10 2004 (likely previous and newer versions as well)",
+        "Description": "Инструмент Workflow Command-line Compiler, включённый в Windows SDK",
+        "Command Usecase": "Выполнение проксированного payload через подписанный Microsoft бинарник для обхода WDAC политик"
+    },
+    {
+        "Filename": "winget.exe",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1105",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Утилита Windows Package Manager",
+        "Command Usecase": "Скачать и установить ПО из Microsoft Store, даже если Microsoft Store заблокирован, и AppLocker активирован"
+    },
+    {
+        "Filename": "winrm.vbs",
+        "Command Category": "AWL Bypass",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1220",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Скрипт для управления настройками Windows RM",
+        "Command Usecase": "Выполнение произвольного неподписанного кода через XSL скрипт"
+    },
+    {
+        "Filename": "Bitsadmin.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется для управления интеллектуальной фоновой передачей",
+        "Command Usecase": "Выполнение указанного файла в альтернативном потоке данных, может использоваться для обхода защитных механизмов или как механизм персистентности"
+    },
+    {
+        "Filename": "Certutil.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл Windows для работы с сертификатами",
+        "Command Usecase": "Скачать файл из Интернета и сохранить его в альтернативном потоке данных NTFS"
+    },
+    {
+        "Filename": "Cmd.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Командная строка Windows",
+        "Command Usecase": "Может использоваться для обхода защитных механизмов или скрытия как механизм персистентности"
+    },
+    {
+        "Filename": "Cmd.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1059.003",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Командная строка Windows",
+        "Command Usecase": "Может использоваться для обхода защитных механизмов или скрытия как механизм персистентности"
+    },
+    {
+        "Filename": "Control.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.002",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл для запуска элементов панели управления Windows",
+        "Command Usecase": "Может использоваться для обхода защитных механизмов или скрытия как механизм персистентности"
+    },
+    {
+        "Filename": "Cscript.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл для выполнения скриптов в Windows",
+        "Command Usecase": "Может использоваться для обхода защитных механизмов или скрытия как механизм персистентности"
+    },
+    {
+        "Filename": "Diantz.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows XP, Windows vista, Windows 7, Windows 8, Windows 8.1.",
+        "Description": "Бинарный файл для упаковки существующих файлов в CAB (.cab)",
+        "Command Usecase": "Скрыть данные, сжатые в альтернативном потоке данных"
+    },
+    {
+        "Filename": "Esentutl.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл для работы с базой данных Microsoft JET",
+        "Command Usecase": "Скопировать файл и скрыть его в альтернативном потоке данных для обхода защитных механизмов"
+    },
+    {
+        "Filename": "Esentutl.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл для работы с базой данных Microsoft JET",
+        "Command Usecase": "Извлечь скрытый файл из альтернативных потоков данных"
+    },
+    {
+        "Filename": "Esentutl.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл для работы с базой данных Microsoft JET",
+        "Command Usecase": "Скопировать файл и скрыть его в альтернативном потоке данных для обхода защитных механизмов"
+    },
+    {
+        "Filename": "Expand.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл для распаковки одного или нескольких архивов",
+        "Command Usecase": "Копирует файлы с A в B"
+    },
+    {
+        "Filename": "Extrac32.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows XP, Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Извлечение в ADS, копирование или перезапись файла с Extrac32.exe",
+        "Command Usecase": "Извлечь данные из cab файла и скрыть их в альтернативном потоке данных"
+    },
+    {
+        "Filename": "Extrac32.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows XP, Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Извлечение в ADS, копирование или перезапись файла с Extrac32.exe",
+        "Command Usecase": "Извлечь данные из cab файла и скрыть их в альтернативном потоке данных"
+    },
+    {
+        "Filename": "Findstr.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Запись в ADS, поиск или скачивание файлов с Findstr.exe",
+        "Command Usecase": "Добавить файл в альтернативный поток данных для скрытия от защитных механизмов"
+    },
+    {
+        "Filename": "Findstr.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Запись в ADS, поиск или скачивание файлов с Findstr.exe",
+        "Command Usecase": "Добавить файл в альтернативный поток данных с WebDAV сервера для скрытия от защитных механизмов"
+    },
+    {
+        "Filename": "Forfiles.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Выбирает и выполняет команду для одного или нескольких файлов (полезно для пакетной обработки)",
+        "Command Usecase": "Использовать forfiles для запуска нового процесса из бинарника, скрытого в альтернативном потоке данных"
+    },
+    {
+        "Filename": "Makecab.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows XP, Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл для упаковки существующих файлов в CAB (.cab)",
+        "Command Usecase": "Скрыть данные, сжатые в альтернативном потоке данных"
+    },
+    {
+        "Filename": "Makecab.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows XP, Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Бинарный файл для упаковки существующих файлов в CAB (.cab)",
+        "Command Usecase": "Скрыть данные, сжатые в альтернативном потоке данных"
+    },
+    {
+        "Filename": "Mavinject.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется App-v в Windows",
+        "Command Usecase": "Инъекция DLL в запущенный процесс"
+    },
+    {
+        "Filename": "MpCmdRun.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows 10",
+        "Description": "Бинарный файл Windows Defender. Используется для управления настройками Windows Defender",
+        "Command Usecase": "Скрыть загруженные данные в альтернативном потоке данных"
+    },
+    {
+        "Filename": "Mshta.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1218.005",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10 (Does not work on 1903 and newer)",
+        "Description": "Используется Windows для запуска HTML-приложений (.hta)",
+        "Command Usecase": "Выполнить код, скрытый в альтернативном потоке данных"
+    },
+    {
+        "Filename": "msxsl.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564",
+        "Operating System": "Windows",
+        "Description": "Командная утилита для выполнения XSL-преобразований",
+        "Command Usecase": "Скачать файл из Интернета и сохранить его в альтернативном потоке данных NTFS"
+    },
+    {
+        "Filename": "Print.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для отправки файлов на принтер",
+        "Command Usecase": "Скрыть бинарный файл в альтернативном потоке данных для потенциального обхода защитных механизмов"
+    },
+    {
+        "Filename": "PrintBrm.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Командная утилита миграции принтеров",
+        "Command Usecase": "Распаковать ZIP файл, хранящийся в альтернативном потоке данных, в новую папку"
+    },
+    {
+        "Filename": "Reg.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется для работы с реестром",
+        "Command Usecase": "Скрыть/добавить информацию реестра в альтернативный поток данных для последующего использования"
+    },
+    {
+        "Filename": "Regedit.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для работы с реестром",
+        "Command Usecase": "Скрыть данные реестра в альтернативном потоке данных"
+    },
+    {
+        "Filename": "Regedit.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для работы с реестром",
+        "Command Usecase": "Импортировать скрытые данные реестра из альтернативного потока данных"
+    },
+    {
+        "Filename": "Regini.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется для работы с реестром",
+        "Command Usecase": "Записать в реестр"
+    },
+    {
+        "Filename": "Rundll32.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для запуска DLL-файлов",
+        "Command Usecase": "Выполнить код из альтернативного потока данных"
+    },
+    {
+        "Filename": "Sc.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для управления службами",
+        "Command Usecase": "Выполнить бинарный файл, скрытый в альтернативном потоке данных"
+    },
+    {
+        "Filename": "Sc.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для управления службами",
+        "Command Usecase": "Выполнить бинарный файл, скрытый в альтернативном потоке данных"
+    },
+    {
+        "Filename": "Tar.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Используется Windows для создания и извлечения архивов",
+        "Command Usecase": "Может использоваться для обхода защитных механизмов или как часть механизма персистентности"
+    },
+    {
+        "Filename": "Tar.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows 10, Windows 11",
+        "Description": "Используется Windows для создания и извлечения архивов",
+        "Command Usecase": "Может использоваться для обхода защитных механизмов или как часть механизма персистентности"
+    },
+    {
+        "Filename": "Wmic.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Командная утилита WMI (WMIC) для работы с WMI",
+        "Command Usecase": "Выполнить бинарный файл, скрытый в альтернативных потоках данных, для обхода защитных механизмов"
+    },
+    {
+        "Filename": "Wscript.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для выполнения скриптов",
+        "Command Usecase": "Выполнить скрытый код для обхода защитных механизмов"
+    },
+    {
+        "Filename": "Wscript.exe",
+        "Command Category": "ADS",
+        "Command Privileges": "User",
+        "MITRE ATT&CK technique": "T1564.004",
+        "Operating System": "Windows vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11",
+        "Description": "Используется Windows для выполнения скриптов",
+        "Command Usecase": "Выполнить скрытый код для обхода защитных механизмов"
+    }
+]
